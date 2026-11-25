@@ -1,0 +1,186 @@
+% Slot 1: C1--C4 (Thu 26 Nov, 09:00--11:00 Rome)
+
+\section{Slot 1: C1--C4}
+
+\begin{frame}{Slot 1 \textperiodcentered\ Thu 09:00--11:00}
+  \begin{center}
+    \begin{tabular}{@{}rl@{}}
+      \toprule
+      \textbf{Clock} & \textbf{Block} \\
+      \midrule
+      09:00--09:10 & Welcome, room rules, laptop check \\
+      09:10--09:30 & \concept{C1} Agent vs chatbot \\
+      09:30--09:55 & \concept{C2} Version control: your first pull request \\
+      09:55--10:35 & \concept{C3} \artifact{AGENTS.md}: boundaries first, with privacy \\
+      10:35--10:45 & Pause / set-up help \\
+      10:45--11:00 & \concept{C4} To-do lists \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{frame}
+
+% ---------------------------------------------------------------- C1
+\begin{frame}{C1 \textperiodcentered\ Agent vs chatbot}
+  \timebox{09:10--09:30}
+  \inplainwords{A chatbot only talks. An agent can also act: it opens your files,
+    runs your code, reads the result and tries again.}
+  \likethis{phoning a friend for advice vs hiring an RA who sits at your desk.}
+\end{frame}
+
+\begin{frame}{C1 \textperiodcentered\ Card--Krueger: same question, two answers}
+  \centering
+  {\large ``What is the NJ--PA change in employment?''}
+  \vspace{0.6em}
+
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.47\textwidth}
+      \begin{block}{Chatbot}
+        Guesses a number from what it remembers about the 1994 paper.
+      \end{block}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+      \begin{block}{Agent}
+        Runs \artifact{did\_analysis.py} on our folder and quotes the printed note.
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vspace{0.6em}
+
+  Only one of these answers comes from \textbf{your} data.
+\end{frame}
+
+\begin{frame}{C1 \textperiodcentered\ Your turn}
+  \youtry{read only, nothing is edited}
+  \vspace{0.3em}
+  \begin{enumerate}
+    \item Ask a plain chat: ``What is the NJ--PA change in employment?''
+    \item Ask the agent the same question, adding ``Do not edit any file.''
+    \item Compare: where did each number come from?
+  \end{enumerate}
+  \vspace{0.5em}
+  {\small Guide: \artifact{demos/slot1\_workflows.md} \textperiodcentered\ \artifact{exercises/04\_slot1\_workflows.md}}
+\end{frame}
+
+% ---------------------------------------------------------------- C2
+\begin{frame}{C2 \textperiodcentered\ Version control}
+  \timebox{09:30--09:55}
+  \inplainwords{A record of every saved version of the project, each with a note,
+    so you can see what changed and go back. GitHub keeps that record online and
+    lets others review changes before they are accepted.}
+  \likethis{Track Changes plus dated ``save as'' copies, shared with coauthors.}
+\end{frame}
+
+\begin{frame}{C2 \textperiodcentered\ Five words we use all day}
+  \begin{tabular}{@{}p{0.27\linewidth}p{0.66\linewidth}@{}}
+    \toprule
+    \textbf{Word} & \textbf{Meaning} \\
+    \midrule
+    Project folder & All the course files, with their full history \\
+    Saved version & A snapshot of the files, with a one-line note \\
+    Separate copy & A safe place to try changes (a ``branch'') \\
+    List of changes & The lines added and removed, side by side \\
+    Pull request & A request to merge changes, with a review page \\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
+\begin{frame}{C2 \textperiodcentered\ Card--Krueger: reading the agent's edit}
+  \begin{itemize}
+    \item The agent edits \artifact{examples/card-krueger-toy/README.md}.
+    \item GitHub shows a list of changes: green lines added, red lines removed.
+    \item You accept, or ask for a fix, before it joins the main version.
+    \item Nothing is lost: every saved version can come back.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{C2 \textperiodcentered\ Your turn: first pull request}
+  \youtry{09:30--09:55}
+  \vspace{0.3em}
+  \begin{enumerate}
+    \item Make a separate copy.
+    \item Edit one line in \artifact{notes/lane\_choice.md}: your tool and why.
+    \item Save the version with a short note.
+    \item Open a pull request and read its list of changes.
+    \item Review, then merge.
+  \end{enumerate}
+  {\small Guide: \artifact{sessions/slot1.md} \textperiodcentered\ \artifact{exercises/05\_slot1\_governance.md}}
+\end{frame}
+
+% ---------------------------------------------------------------- C3
+\begin{frame}{C3 \textperiodcentered\ \texttt{AGENTS.md}: boundaries first}
+  \timebox{09:55--10:35}
+  \inplainwords{A plain-text rules file the agent reads before it starts any task.
+    It says what the agent may touch, what it must never do, and how to check its work.}
+  \likethis{the house rules you give a new RA on day one.}
+\end{frame}
+
+\begin{frame}{C3 \textperiodcentered\ Card--Krueger: the agent refuses}
+  Two lines from our \artifact{AGENTS.md}:
+  \vspace{0.3em}
+  \begin{block}{}
+    \texttt{- Do not modify raw data.}\\
+    \texttt{- Do not let agents certify identification, causality, or interpretation.}
+  \end{block}
+  \vspace{0.4em}
+  Demo: ask the agent to edit \artifact{toy\_fast\_food.csv}.\\
+  Watch it refuse and point to the rule.
+\end{frame}
+
+\begin{frame}{C3 \textperiodcentered\ Privacy in three questions}
+  \begin{enumerate}
+    \item How sensitive is the data?
+    \item Who may see it?
+    \item Where does the agent run: your laptop or someone else's computer?
+  \end{enumerate}
+  \vspace{0.5em}
+  \begin{block}{Faculty default}
+    \centering\large Anonymize \textperiodcentered\ authorize \textperiodcentered\ keep it on the machine
+  \end{block}
+  \vspace{0.3em}
+  {\small Full check: \artifact{docs/privacy\_boundary.md}}
+\end{frame}
+
+\begin{frame}{C3 \textperiodcentered\ Your turn}
+  \youtry{09:55--10:35}
+  \vspace{0.3em}
+  \begin{enumerate}
+    \item Read \artifact{AGENTS.md} (two minutes).
+    \item Add one rule you would want for your own project.
+    \item Fill in the privacy check in \artifact{docs/privacy\_boundary.md}.
+  \end{enumerate}
+  \vspace{0.5em}
+  {\small Guide: \artifact{demos/slot1\_governance.md} \textperiodcentered\ Pause 10:35--10:45}
+\end{frame}
+
+% ---------------------------------------------------------------- C4
+\begin{frame}{C4 \textperiodcentered\ To-do lists}
+  \timebox{10:45--11:00}
+  \inplainwords{Before acting, the agent writes the steps it plans to take as a
+    checklist. You edit the list, then it works through it and ticks items off.}
+  \likethis{a shopping list you check before anyone drives to the store.}
+\end{frame}
+
+\begin{frame}{C4 \textperiodcentered\ Card--Krueger: plan only}
+  \prompttext{\raggedright Plan only, do not edit. Task: examples/card-krueger-goals/goals/ck-robustness-checks.md}
+  \vspace{0.6em}
+  \begin{itemize}
+    \item[$\square$] Load the panel
+    \item[$\square$] Check that every store appears before and after
+    \item[$\square$] Compute NJ and PA group means
+    \item[$\square$] Drop one store at a time and recompute
+    \item[$\square$] Write a short note
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{C4 \textperiodcentered\ Your turn}
+  \youtry{10:45--11:00}
+  \vspace{0.3em}
+  \begin{enumerate}
+    \item Ask for the to-do list only.
+    \item Delete or reorder one step.
+    \item Let the agent do step 1 only, then stop.
+    \item Paste the list in \artifact{notes/modes\_playbook.md}.
+  \end{enumerate}
+  \vspace{0.5em}
+  {\small Template: \artifact{templates/agent\_task\_contract.md}}
+\end{frame}

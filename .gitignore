@@ -1,0 +1,18 @@
+.DS_Store
+.history/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+data/raw/
+data/private/
+outputs/
+results/
+*.log
+# Local agent caches (keep tracked examples under .claude/skills when committed intentionally)
+.cursor/
+!.claude/skills/
+!.claude/agents/

@@ -1,0 +1,148 @@
+% Slot 3: C9--C11 launch (Fri 27 Nov 10:15--12:00 Rome)
+
+\section{Slot 3: C9--C11}
+
+\begin{frame}{Slot 3 \textperiodcentered\ Fri 10:15--12:00}
+  \begin{center}
+    \begin{tabular}{@{}rl@{}}
+      \toprule
+      \textbf{Clock} & \textbf{Block} \\
+      \midrule
+      10:15--10:50 & \concept{C9} Using sub-agents \\
+      10:50--11:15 & \concept{C10} Orchestrating sub-agents and swarms \\
+      11:15--11:25 & Pause \\
+      11:25--12:00 & \concept{C11} Issue-board swarm: launch two cards \\
+      \textit{12:00--14:00} & \textit{Lunch: the agents keep working} \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{frame}
+
+% ---------------------------------------------------------------- C9
+\begin{frame}{C9 \textperiodcentered\ Using sub-agents}
+  \timebox{10:15--10:50}
+  \inplainwords{Call the helper by name, give it one narrow instruction, keep it
+    read-only and read its report before you act. You decide what to do with the report.}
+  \likethis{sending a draft to two referees who don't talk to each other.}
+\end{frame}
+
+\begin{frame}{C9 \textperiodcentered\ Card--Krueger: two referee reports}
+  \prompttext{\raggedright Use the data-reviewer sub-agent on examples/card-krueger-toy/. Read only. Report panel balance and NJ/PA coding.}
+  \vspace{0.4em}
+  \prompttext{\raggedright Use the literature-reviewer sub-agent on the same folder. Read only. Check the claims against the references.}
+  \vspace{0.6em}
+  \begin{itemize}
+    \item Two separate notebooks: neither sees the other's report.
+    \item Where they agree, look closer. Where they disagree, you decide.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{C9 \textperiodcentered\ Your turn}
+  \youtry{10:15--10:50}
+  \vspace{0.3em}
+  \begin{enumerate}
+    \item Run both helpers on the Card--Krueger folder.
+    \item Log one finding you accept and one you reject in \artifact{notes/orchestration\_log.md}.
+    \item Check that no file changed.
+  \end{enumerate}
+  \vspace{0.4em}
+  {\small Helper won't start? Paste its instructions into a fresh chat and say ``read only''.}\\
+  {\small Guide: \artifact{demos/slot3\_subagents\_vc.md} \textperiodcentered\ \artifact{exercises/07\_slot3\_subagents\_vc.md}}
+\end{frame}
+
+% ---------------------------------------------------------------- C10
+\begin{frame}{C10 \textperiodcentered\ Orchestrating sub-agents and swarms}
+  \timebox{10:50--11:15}
+  \inplainwords{Orchestrating means splitting a job into parts, handing each part to a
+    different agent, and putting the results back together. A swarm is many agents
+    working at the same time; a human still makes the final call.}
+  \likethis{a PI running several RAs, each with their own files.}
+\end{frame}
+
+\begin{frame}{C10 \textperiodcentered\ Card--Krueger: a writer and a checker}
+  \begin{center}
+    \begin{tikzpicture}[
+        node distance=1.0cm,
+        role/.style={rectangle, draw=courseblue, thick, rounded corners=3pt, minimum width=3.3cm, minimum height=1.0cm, align=center, font=\footnotesize\bfseries, fill=coursebg},
+        arr/.style={-Stealth, thick, courseblue}
+      ]
+      \node[role] (w) {Writer\\\normalfont\scriptsize documents the panel};
+      \node[role, right=of w, fill=courseteal!14] (c) {Checker\\\normalfont\scriptsize reviews literature claims};
+      \node[role, below=0.9cm of $(w)!0.5!(c)$, draw=codered, fill=codered!8] (y) {You\\\normalfont\scriptsize read both, then merge};
+      \draw[arr] (w) -- (y);
+      \draw[arr] (c) -- (y);
+    \end{tikzpicture}
+  \end{center}
+  \vspace{0.3em}
+  \begin{itemize}
+    \item Different files: the two agents never edit the same lines.
+    \item Rules for the pair: \artifact{examples/card-krueger-swarm/README.md}.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{C10 \textperiodcentered\ Your turn: split the job}
+  \youtry{10:50--11:15}
+  \vspace{0.3em}
+  Split ``replicate and extend Card--Krueger'' into three jobs that share no files.
+  \vspace{0.5em}
+
+  \begin{tabular}{@{}lp{0.40\linewidth}p{0.32\linewidth}@{}}
+    \toprule
+    \textbf{Job} & \textbf{Files it may touch} & \textbf{Done when} \\
+    \midrule
+    1 & & \\
+    2 & & \\
+    3 & & \\
+    \bottomrule
+  \end{tabular}
+  \vspace{0.5em}
+
+  {\small Pause 11:15--11:25.}
+\end{frame}
+
+% ---------------------------------------------------------------- C11
+\begin{frame}{C11 \textperiodcentered\ Issue-board swarm}
+  \timebox{11:25--12:00}
+  \inplainwords{Each job is written as an issue, a to-do card on GitHub. Agents pick
+    up cards marked ready, work in their own copy, and send back a pull request
+    linked to the card for review.}
+  \likethis{a job board in a shared office: whoever is free takes the next card.}
+\end{frame}
+
+\begin{frame}{C11 \textperiodcentered\ Card--Krueger: two cards on the board}
+  \begin{center}
+    \begin{tikzpicture}[
+        node distance=0.55cm,
+        st/.style={rectangle, draw=courseblue, thick, rounded corners=3pt, minimum width=2.4cm, minimum height=0.8cm, align=center, font=\footnotesize\bfseries, fill=coursebg},
+        arr/.style={-Stealth, thick, courseblue}
+      ]
+      \node[st] (r) {ready};
+      \node[st, right=of r] (p) {in-progress};
+      \node[st, right=of p, fill=courseteal!14] (n) {needs-review};
+      \node[st, right=of n, fill=codegreen!12] (d) {done};
+      \draw[arr] (r) -- (p);
+      \draw[arr] (p) -- (n);
+      \draw[arr] (n) -- (d);
+    \end{tikzpicture}
+  \end{center}
+  \vspace{0.4em}
+  \begin{itemize}
+    \item Card 1: \artifact{ck-data-cleaning}: check and document the panel.
+    \item Card 2: \artifact{ck-parallel-trends-figure}: draw the before/after figure.
+    \item Cards live in \artifact{examples/card-krueger-swarm/issues/}.
+    \item Only you move a card to \textbf{done}.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{C11 \textperiodcentered\ Your turn: launch before lunch}
+  \youtry{11:25--12:00}
+  \vspace{0.3em}
+  \begin{enumerate}
+    \item Cloud agent? First fill in \artifact{agent-harness/autonomous\_agent\_risk\_card.md}.
+    \item Open the two cards as issues and mark them \textbf{ready}.
+    \item Start two agents, one per card (cloud, or two local windows).
+    \item Go to lunch. Back at 14:00 to review.
+  \end{enumerate}
+  \vspace{0.4em}
+  {\small At most two cards live. No confidential files. Agents never merge.}
+\end{frame}

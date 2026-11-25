@@ -1,0 +1,189 @@
+% Slot 4: C11 review, C12--C14, Capstone, close (Fri 27 Nov 14:00--16:30 Rome)
+
+\section{Slot 4: C11 review, C12--C14}
+
+\begin{frame}{Slot 4 \textperiodcentered\ Fri 14:00--16:30}
+  \begin{center}
+    \begin{tabular}{@{}rl@{}}
+      \toprule
+      \textbf{Clock} & \textbf{Block} \\
+      \midrule
+      14:00--14:10 & \concept{C11} Review what the swarm returned \\
+      14:10--14:25 & \concept{C12} Goals \\
+      14:25--14:50 & \concept{C13} Acceptance criteria: rewrite one card, relaunch \\
+      14:50--15:50 & \concept{C14} Verification and evaluation \\
+      15:50--16:15 & Capstone: your own project \\
+      16:15--16:30 & Close and 7-day plan \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{frame}
+
+% ---------------------------------------------------------------- C11 review
+\begin{frame}{C11 \textperiodcentered\ Review what came back}
+  \timebox{14:00--14:10}\par\vspace{0.3em}
+  For each pull request from lunch:
+  \begin{enumerate}
+    \item Ask \artifact{pr-reviewer} (read only) for a report.
+    \item Did it touch only the files on its card?
+    \item Does the check command pass?
+    \item Move the card to \textbf{done}, or back to \textbf{ready} with a note.
+  \end{enumerate}
+  \vspace{0.4em}
+  {\large How did each agent know when to stop?}
+\end{frame}
+
+% ---------------------------------------------------------------- C12
+\begin{frame}{C12 \textperiodcentered\ Goals}
+  \timebox{14:10--14:25}
+  \inplainwords{A goal is one sentence describing the finished state, in a form you
+    can check. It tells the agent where to stop, not how to get there.}
+  \likethis{the destination in a satnav, not the turn-by-turn directions.}
+\end{frame}
+
+\begin{frame}{C12 \textperiodcentered\ Card--Krueger: from vague to checkable}
+  \begin{block}{Vague}
+    ``Audit the replication.''
+  \end{block}
+  \vspace{0.3em}
+  \begin{block}{Goal}
+    \artifact{notes/replication\_audit\_ck.md} exists and records GREEN, YELLOW or RED
+    with the check output.
+  \end{block}
+  \vspace{0.4em}
+  {\small Claude Code and Codex: type \texttt{/goal} first. Cursor: make it the last line of the prompt.}\\
+  {\small More goals: \artifact{examples/card-krueger-goals/goals/}}
+\end{frame}
+
+\begin{frame}{C12 \textperiodcentered\ Your turn}
+  \youtry{14:10--14:25}
+  \vspace{0.3em}
+  \begin{enumerate}
+    \item Take one lunchtime card.
+    \item Rewrite its title as a one-sentence goal.
+    \item Test: could a stranger answer ``done?'' with yes or no?
+  \end{enumerate}
+\end{frame}
+
+% ---------------------------------------------------------------- C13
+\begin{frame}{C13 \textperiodcentered\ Acceptance criteria}
+  \timebox{14:25--14:50}
+  \inplainwords{A yes/no check that says when a job counts as done. In a swarm, each
+    agent knows when to stop, and you can check many results quickly.}
+  \likethis{a building inspector's checklist.}
+\end{frame}
+
+\begin{frame}{C13 \textperiodcentered\ Card--Krueger: done when\ldots}
+  Card \artifact{ck-data-cleaning} is done when:
+  \vspace{0.3em}
+  \begin{itemize}
+    \item[$\square$] \artifact{toy\_fast\_food.csv} is unchanged.
+    \item[$\square$] The check command passes.
+    \item[$\square$] The README states the sample restriction.
+    \item[$\square$] The DiD printed equals the DiD in the note.
+  \end{itemize}
+  \vspace{0.4em}
+  Each line is yes or no. No line asks ``is it good?''
+\end{frame}
+
+\begin{frame}{C13 \textperiodcentered\ Your turn: rewrite and relaunch}
+  \youtry{14:25--14:50}
+  \vspace{0.3em}
+  \begin{enumerate}
+    \item Add three yes/no criteria to one card.
+    \item Relaunch the agent on that card.
+    \item Judge the new pull request only against your three lines.
+  \end{enumerate}
+  \vspace{0.4em}
+  {\small Template: \artifact{templates/issue\_card.md}}
+\end{frame}
+
+% ---------------------------------------------------------------- C14
+\begin{frame}{C14 \textperiodcentered\ Verification and evaluation}
+  \timebox{14:50--15:50}
+  \begin{enumerate}
+    \item \textbf{Check less:} small jobs, protected files, clear done-when checks.
+    \item \textbf{Automate:} check commands that run on their own, on every change.
+    \item \textbf{Test your set-up:} try your Skills, sub-agents and whole set-up
+      on known mistakes.
+  \end{enumerate}
+  \likethis{planting a known error in a paper to see whether the referee catches it.}
+\end{frame}
+
+\begin{frame}{C14 \textperiodcentered\ Card--Krueger: a planted mistake}
+  \artifact{faults/drifted\_table.tex}: a hand-copied DiD (3.15) and row count (47).
+  \vspace{0.5em}
+  \begin{center}
+    \begin{tikzpicture}[
+        node distance=0.7cm,
+        vbox/.style={rectangle, draw=courseblue, thick, rounded corners=3pt, minimum width=2.5cm, minimum height=0.85cm, align=center, font=\footnotesize\bfseries, fill=coursebg},
+        arr/.style={-Stealth, thick, courseblue}
+      ]
+      \node[vbox, draw=codered, fill=codered!8] (f) {1. Fail\\\normalfont\scriptsize check stops};
+      \node[vbox, right=of f] (d) {2. Diagnose\\\normalfont\scriptsize which number?};
+      \node[vbox, right=of d] (x) {3. Fix\\\normalfont\scriptsize never the checks};
+      \node[vbox, right=of x, fill=codegreen!12] (r) {4. Rerun\\\normalfont\scriptsize check passes};
+      \draw[arr] (f) -- (d);
+      \draw[arr] (d) -- (x);
+      \draw[arr] (x) -- (r);
+    \end{tikzpicture}
+  \end{center}
+  \vspace{0.4em}
+  A passing check means the numbers match. It says nothing about causality.
+\end{frame}
+
+\begin{frame}{C14 \textperiodcentered\ Card--Krueger: test the helpers}
+  \begin{tabular}{@{}p{0.29\linewidth}p{0.43\linewidth}p{0.20\linewidth}@{}}
+    \toprule
+    \textbf{What you test} & \textbf{Known mistake} & \textbf{Result} \\
+    \midrule
+    Skill:\newline \artifact{replication-checker} & \artifact{drifted\_table.tex} & caught / missed \\
+    Sub-agent:\newline \artifact{data-reviewer} & \artifact{unbalanced\_panel.csv} & caught / missed \\
+    Whole set-up & Fresh chat, fresh copy: reproduce from the README alone? & yes / no \\
+    \bottomrule
+  \end{tabular}
+  \vspace{0.6em}
+
+  {\small Planted mistakes: \artifact{examples/card-krueger-toy/faults/}}
+\end{frame}
+
+\begin{frame}{C14 \textperiodcentered\ Your turn}
+  \youtry{14:50--15:50}
+  \vspace{0.3em}
+  \begin{enumerate}
+    \item On a temporary separate copy, fix one planted mistake.
+    \item Do not touch \artifact{tests/}. Rerun the check command.
+    \item Fill in the three-row scorecard: Skill, sub-agent, whole set-up.
+    \item Record it in \artifact{templates/agent\_use\_record.md}.
+  \end{enumerate}
+  \vspace{0.3em}
+  {\small Optional demo: an automatic check after each edit (\artifact{.claude/hooks/}).}\\
+  {\small Guide: \artifact{demos/slot4\_verify\_capstone.md}}
+\end{frame}
+
+% ---------------------------------------------------------------- Capstone and close
+\section{Capstone and close}
+
+\begin{frame}{Capstone: your own project}
+  \timebox{15:50--16:15}\par\vspace{0.3em}
+  On one non-confidential project of yours:
+  \begin{enumerate}
+    \item One rule in its \artifact{AGENTS.md} (\concept{C3}).
+    \item One Skill for a task you repeat (\concept{C6}).
+    \item One goal (\concept{C12}) with three yes/no criteria (\concept{C13}).
+    \item Evidence: the check command and its output.
+  \end{enumerate}
+  {\small Only confidential data at hand? Use the Card--Krueger folder. Rubric: \artifact{docs/capstone\_rubric.md}}
+\end{frame}
+
+\begin{frame}{Close: your next seven days}
+  \timebox{16:15--16:30}\par\vspace{0.3em}
+  \begin{itemize}
+    \item Day 1: add \artifact{AGENTS.md} to one real project.
+    \item This week: turn one weekly chore into a Skill.
+    \item Next job you delegate: write a goal and three done-when checks first.
+    \item Always: read the list of changes; you sign off, not the agent.
+  \end{itemize}
+  \vspace{0.4em}
+  {\small Plan: \artifact{docs/adoption\_plan\_7d.md} \textperiodcentered\ Start page: \artifact{START\_HERE.md}}
+\end{frame}

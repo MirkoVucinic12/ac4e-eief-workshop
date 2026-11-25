@@ -1,0 +1,26 @@
+{
+  "_comment": "Illustrative Claude Code hooks for the Card-Krueger DiD project. Copy to .claude/settings.json only when you want these hooks. In an interactive session, the workspace trust dialog is what allows settings-file hooks to run. /hooks lists loaded hooks and their commands; it does not approve them. The Stop hook appends a line to notes/orchestration_log.md.",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/post_edit_did_analysis.py"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '[Hook] Claude Code session stopped. Review diff before merging.' >> notes/orchestration_log.md"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+% Planted error: hand-copied numbers in the table do not match the script output.
+% Column (3) lists a DiD estimate of 3.15 (instead of 2.64) and 47 raw rows
+% (instead of 40 balanced panel observations). Must fail verify_latex_table_numbers.
+\begin{tabular}{lcccc}
+\toprule
+ & (1) & (2) & (3) & (4) \\
+ & Baseline open & With controls & Perm.\ closed & PT wt 0.25 \\
+\midrule
+NJ $\times$ Post (DiD) & 2.88 & 2.88 & 3.15 & 2.33 \\
+ & (0.66) & (0.69) & (1.89) & (0.54) \\
+\midrule
+Observations & 36 & 36 & 47 & 36 \\
+Stores & 18 & 18 & 20 & 18 \\
+\bottomrule
+\multicolumn{5}{p{0.94\linewidth}}{\footnotesize \textit{Notes:} Synthetic teaching data; not Card and Krueger (1994) microdata and not a causal estimate. Store-clustered HC1 standard errors in parentheses; policy varies across $G=2$ state clusters, so store clustering does not address state-level shocks. No significance stars are reported.} \\
+\end{tabular}

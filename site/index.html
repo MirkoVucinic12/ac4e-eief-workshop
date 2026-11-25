@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic Coding for Economists</title>
+  <meta name="description" content="Participant materials for the EIEF / Luiss workshop, 26-27 November 2026. One synthetic Card-Krueger example.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1c2430;
+      --muted: #4a5568;
+      --line: #d5dbe3;
+      --paper: #f7f6f3;
+      --card: #ffffff;
+      --blue: #005b96;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.5;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1 {
+      font-size: 1.85rem;
+      line-height: 1.2;
+      margin: 0 0 0.35rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin: 2rem 0 0.6rem;
+      color: var(--blue);
+    }
+    p, li { font-size: 1.05rem; }
+    .meta { color: var(--muted); margin-top: 0; }
+    a { color: var(--blue); }
+    code, pre {
+      font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+      font-size: 0.92rem;
+    }
+    pre {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 0.85rem 1rem;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      font-size: 0.98rem;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 0.45rem 0.55rem;
+      border-bottom: 1px solid var(--line);
+    }
+    th { color: var(--muted); font-weight: 600; }
+    .download {
+      display: inline-block;
+      margin-top: 0.4rem;
+      padding: 0.45rem 0.8rem;
+      background: var(--blue);
+      color: white;
+      text-decoration: none;
+    }
+    footer {
+      margin-top: 2.5rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Agentic Coding for Economists</h1>
+    <p class="meta">EIEF / Luiss, 26-27 November 2026 (Rome). Antonio Mele.</p>
+
+    <h2>What this is</h2>
+    <p>An eight-hour faculty workshop: fourteen ideas for supervising an AI agent the way you supervise a research assistant. One example all day, the synthetic Card-Krueger panel in <code>examples/card-krueger-toy/</code>. Those numbers are hand-written teaching data, not the 1994 survey, and they support no research claim.</p>
+
+    <h2>Clone</h2>
+    <p>Pick a folder on your laptop first. If an agent clones this for you, it should ask which folder to use before it clones.</p>
+    <pre>git clone https://github.com/meleantonio/ac4e-eief-workshop.git</pre>
+    <p>Repository: <a href="https://github.com/meleantonio/ac4e-eief-workshop">github.com/meleantonio/ac4e-eief-workshop</a></p>
+
+    <h2>Download</h2>
+    <p>A zip of the same folder:</p>
+    <p><a class="download" href="ac4e-eief-workshop.zip">Download the materials</a></p>
+    <p>GitHub copy of that zip: <a href="https://github.com/meleantonio/ac4e-eief-workshop/archive/refs/heads/main.zip">github.com/meleantonio/ac4e-eief-workshop</a></p>
+
+    <h2>Folder map</h2>
+    <p>These are the same paths the slides and exercises use.</p>
+    <table>
+      <thead>
+        <tr><th>Path</th><th>What it is</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>START_HERE.md</code></td><td>Where you begin</td></tr>
+        <tr><td><code>AGENTS.md</code></td><td>Rules the agent reads</td></tr>
+        <tr><td><code>SCHEDULE.md</code></td><td>The clock</td></tr>
+        <tr><td><code>exercises/</code></td><td>What you do in the room</td></tr>
+        <tr><td><code>examples/card-krueger-toy/</code></td><td>The synthetic Card-Krueger panel</td></tr>
+        <tr><td><code>templates/</code></td><td>Forms you copy</td></tr>
+        <tr><td><code>.claude/skills/</code></td><td>Skills the demos run</td></tr>
+        <tr><td><code>sessions/</code></td><td>What each block covers</td></tr>
+        <tr><td><code>demos/</code></td><td>Prompts used in the room</td></tr>
+        <tr><td><code>notes/</code></td><td>Where you write your answers</td></tr>
+        <tr><td><code>docs/prework.md</code></td><td>Before Thursday</td></tr>
+        <tr><td><code>docs/privacy_boundary.md</code></td><td>The privacy check</td></tr>
+      </tbody>
+    </table>
+    <p>The check command from the slides also runs <code>examples/mini-economics/tests</code>. Friday cards are in <code>examples/card-krueger-swarm/</code>. Goal statements are in <code>examples/card-krueger-goals/</code>.</p>
+
+    <footer>
+      <p>Synthetic teaching data only. Start with <code>START_HERE.md</code> after you clone.</p>
+    </footer>
+  </main>
+</body>
+</html>

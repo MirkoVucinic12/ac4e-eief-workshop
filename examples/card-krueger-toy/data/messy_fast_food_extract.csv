@@ -1,0 +1,48 @@
+store_id,state,wave,status,ft_workers,pt_workers,managers,starting_wage,chain_id
+NJ01,NJ,before,open,8,16,3,4.25,1
+NJ01, nj ,after,open,10,18,3,5.05,1
+NJ02,NJ,Before,open,12,14,4,4.50,2
+NJ02,NJ,after,Open,13,16,4,5.05,2
+NJ03,nj,before,open,6,12,2,4.25,3
+NJ03,NJ,AFTER,open,8,14,3,5.05,3
+NJ04,NJ,before, open ,15,20,4,4.75,4
+NJ04,NJ,after,open,15,18,4,5.10,4
+NJ05, NJ ,before,open,9,18,3,4.35,1
+NJ05,NJ,after,open,11,20,3,5.05,1
+NJ06,NJ,before,open,7,14,3,4.25,2
+NJ06,NJ,after,open,9,14,3,5.05,2
+NJ07,NJ,before,open,11,16,3,4.60,3
+NJ07,NJ,after,open,11,18,3,5.05,3
+NJ08,NJ,before,open,14,12,4,4.85,4
+NJ08,NJ,after,open,14,14,4,5.15,4
+NJ09,nj,before,open,5,16,2,4.25,1
+NJ09,NJ,after,open,8,16,2,5.05,1
+NJ10,NJ,before,open,10,10,3,4.55,2
+NJ10,NJ,after,open,11,12,3,5.05,2
+PA01,PA,before,open,10,16,3,4.35,1
+PA01, pa ,after,open,9,14,3,4.40,1
+PA02,PA,Before,open,13,14,4,4.65,2
+PA02,PA,after,open,13,12,4,4.65,2
+PA03,PA,before,open,8,12,3,4.25,3
+PA03,PA, AFTER ,open,9,12,3,4.30,3
+PA04,PA,before,open,14,18,4,4.80,4
+PA04,PA,after,open,13,16,4,4.80,4
+PA05,pa,before,open,9,14,3,4.40,1
+PA05,PA,after,Open,9,14,3,4.45,1
+PA06,PA,before,open,11,16,3,4.50,2
+PA06,PA,after,open,10,14,3,4.55,2
+PA07,PA,before,open,7,10,2,4.25,3
+PA07,PA,after,open,7,12,2,4.25,3
+PA08, PA ,before,open,12,16,3,4.70,4
+PA08,PA,after,open,11,14,3,4.75,4
+NJ11,NJ,before,open,6,10,2,4.25,1
+NJ11,NJ,after,PERM_CLOSED,0,0,0,,1
+PA09,PA,before,open,5,8,2,4.30,3
+PA09,PA,after,perm_closed,0,0,0,,3
+NJ12,NJ,before,open,9,12,3,4.45,2
+NJ12,NJ,after,Refused,,12,3,,2
+PA10,PA,before,open,8,14,3,4.50,4
+PA10,PA,after,temp_closed,0,0,0,,4
+NJ13,NJ,before,open,10,14,3,4.40,3
+NJ13,NJ,after,open,10,,3,5.05,3
+NJ14,NJ,before,open,8,12,2,4.35,4

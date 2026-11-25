@@ -1,0 +1,14 @@
+{
+  "_comment": "Example Cursor MCP config for the workshop FRED server. Copy to .cursor/mcp.json. Cursor expands ${env:NAME}. Claude Code expands ${NAME}; do not copy this env line into .mcp.json.",
+  "mcpServers": {
+    "fred": {
+      "type": "stdio",
+      "command": "python3",
+      "args": ["-m", "fred_mcp_server"],
+      "env": {
+        "FRED_API_KEY": "${env:FRED_API_KEY}",
+        "PYTHONPATH": "agent-harness/mcp/fred/src"
+      }
+    }
+  }
+}

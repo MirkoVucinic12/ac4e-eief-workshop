@@ -1,0 +1,108 @@
+% Agentic Coding for Economists: EIEF / Luiss eight-hour workshop
+% Fourteen ideas, one example (synthetic Card--Krueger panel).
+% Build: latexmk -pdf -interaction=nonstopmode workshop_slides.tex
+% (from slides/workshop/)
+
+\input{../shared/beamer_preamble}
+
+\title{Agentic Coding for Economists}
+\subtitle{EIEF / Luiss: eight hours, fourteen ideas}
+\author{Antonio Mele}
+\institute{EIEF / Luiss}
+\date{26--27 November 2026}
+
+% Concept frames: definition block, then the everyday comparison.
+\newcommand{\inplainwords}[1]{%
+  \begin{block}{In plain words}\large #1\end{block}}
+\newcommand{\likethis}[1]{%
+  \vspace{0.8em}{\large \textcolor{courseteal}{\textbf{Think of it as:}} #1}}
+\newcommand{\youtry}[1]{\textcolor{coursegray}{\small\textsf{Your turn \textperiodcentered\ #1}}}
+
+\begin{document}
+
+% =============================================================================
+\section{Welcome}
+% =============================================================================
+
+\begin{frame}{}
+  \begin{center}
+    {\LARGE \textbf{Agentic Coding for Economists}}\\[0.12em]
+    {\large EIEF / Luiss: eight hours, fourteen ideas}\\[0.25em]
+    {\small Thu 26 Nov 2026 \quad 09:00--12:00 \quad\textperiodcentered\quad
+      Fri 27 Nov 2026 \quad 09:30--12:00 and 14:00--16:30 (Rome)}\\[0.18em]
+    {\small Antonio Mele \quad\textperiodcentered\quad
+      Claude Code \textperiodcentered\ Codex and Cursor work the same way}\\[0.1em]
+    {\small One example all day: the synthetic Card--Krueger panel}\\[0.35em]
+    {\footnotesize Paste this into Claude Code, Codex, or Cursor.}
+  \end{center}
+  \vspace{0.25em}
+  \begin{center}
+    \fcolorbox{coursegray!35}{coursebg}{%
+      \begin{minipage}{0.94\linewidth}
+        \ttfamily\scriptsize
+        \mbox{Clone \WorkshopRepoUrl.}\\
+        Before you clone, ask me which folder to put it in.\\
+        Wait for my answer, then clone only into that folder.
+      \end{minipage}}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Fourteen ideas on the Rome clock}
+  \small
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    \textbf{Slot} & \textbf{Clock (Rome)} & \textbf{Ideas} \\
+    \midrule
+    1 & Thu 09:00--11:00 & \concept{C1} Agent vs chatbot \textperiodcentered\ \concept{C2} Version control \\
+      & & \concept{C3} \artifact{AGENTS.md}: boundaries first \textperiodcentered\ \concept{C4} To-do lists \\
+    \addlinespace[0.3em]
+    2 & Thu 11:00--12:00 & \concept{C5} Skills: why \textperiodcentered\ \concept{C6} Create a Skill \\
+      & Fri 09:30--10:15 & \concept{C7} Sub-agent vs Skill \textperiodcentered\ \concept{C8} Skill or sub-agent? \\
+    \addlinespace[0.3em]
+    3 & Fri 10:15--12:00 & \concept{C9} Using sub-agents \textperiodcentered\ \concept{C10} Orchestrating and swarms \\
+      & & \concept{C11} Issue-board swarm (agents work over lunch) \\
+    \addlinespace[0.3em]
+    4 & Fri 14:00--16:30 & \concept{C12} Goals \textperiodcentered\ \concept{C13} Acceptance criteria \\
+      & & \concept{C14} Verification \textperiodcentered\ Capstone \textperiodcentered\ 7-day plan \\
+    \bottomrule
+  \end{tabular}
+  \vspace{0.5em}
+
+  {\small Each idea: definition, everyday comparison, Card--Krueger example, your turn.}
+\end{frame}
+
+\begin{frame}[fragile]{One example all day: Card--Krueger}
+  \begin{itemize}
+    \item April 1992: New Jersey raises its minimum wage; Pennsylvania does not.
+    \item Compare fast-food jobs before and after: the NJ--PA difference-in-differences.
+    \item Our folder: \artifact{examples/card-krueger-toy/}.
+    \item \textbf{Synthetic teaching data}, not the real survey. No research claims.
+  \end{itemize}
+  \vspace{0.3em}
+  The check command we run all day:
+  \begin{lstlisting}[style=bash]
+python3 -m pytest examples/card-krueger-toy/tests examples/mini-economics/tests
+  \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Room rules}
+  \timebox{09:00--09:10}
+  \begin{itemize}
+    \item You are the manager; the agent is a fast RA.
+    \item Every agent change is a \textbf{proposal} until you read it and the check passes.
+    \item Agents never certify identification or causality. That is your job.
+    \item No confidential data, referee files or passwords in any prompt.
+  \end{itemize}
+  \vspace{0.3em}
+  First, check your laptop:
+  \begin{lstlisting}[style=bash]
+python3 scripts/validate_setup.py
+  \end{lstlisting}
+\end{frame}
+
+\input{slot1}
+\input{slot2}
+\input{slot3}
+\input{slot4}
+
+\end{document}

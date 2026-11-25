@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "matcher": "Write",
+        "command": "python3 -c \"import json,sys,subprocess; p=json.load(sys.stdin).get('file_path',''); target='examples/card-krueger-toy/src/did_analysis.py'; sys.exit(0 if not p.endswith(target) else subprocess.call([sys.executable,'-m','pytest','examples/card-krueger-toy/tests','-q']))\""
+      },
+      {
+        "matcher": "Write",
+        "command": "python3 -c \"import json,sys; p=json.load(sys.stdin).get('file_path',''); sys.exit(0) if not p.endswith('examples/card-krueger-toy/data/toy_fast_food.csv') else print('[Hook] Raw data file was edited. Verify this was intentional. AGENTS.md prohibits modifying raw data.', file=sys.stderr)\""
+      }
+    ],
+    "afterShellExecution": [
+      {
+        "matcher": "python3 -m pytest",
+        "command": "python3 -c \"import json,sys; json.load(sys.stdin); print('[Hook] Verification run complete. Check output above before proceeding.')\""
+      }
+    ],
+    "stop": [
+      {
+        "matcher": "Stop",
+        "command": "python3 -c \"import datetime; open('notes/orchestration_log.md','a').write('| '+datetime.datetime.now().strftime('%Y-%m-%d %H:%M')+' | Agent stopped | — | Review diff before merge |\\n')\""
+      }
+    ]
+  }
+}

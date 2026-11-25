@@ -1,0 +1,182 @@
+% Slot 2: C5--C8 (Thu 26 Nov 11:00--12:00 + Fri 27 Nov 09:30--10:15 Rome)
+
+\section{Slot 2: C5--C8}
+
+\begin{frame}{Slot 2 \textperiodcentered\ Thu 11:00--12:00 + Fri 09:30--10:15}
+  \begin{center}
+    \begin{tabular}{@{}rl@{}}
+      \toprule
+      \textbf{Clock} & \textbf{Block} \\
+      \midrule
+      Thu 11:00--11:25 & \concept{C5} Skills: why \\
+      11:25--11:55 & \concept{C6} Create a Skill \\
+      11:55--12:00 & Thursday wrap, overnight task \\
+      \addlinespace[0.3em]
+      Fri 09:30--09:35 & Recap \\
+      09:35--09:55 & \concept{C7} Sub-agent vs Skill \\
+      09:55--10:15 & \concept{C8} Rule of thumb: Skill or sub-agent? \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{frame}
+
+% ---------------------------------------------------------------- C5
+\begin{frame}{C5 \textperiodcentered\ Skills: why}
+  \timebox{Thu 11:00--11:25}
+  \inplainwords{A Skill is a saved set of instructions for a task you do often.
+    The agent follows it the same way every time, and you can share it with coauthors.}
+  \likethis{a recipe card, in place of explaining the dish from memory each time.}
+\end{frame}
+
+\begin{frame}{C5 \textperiodcentered\ Card--Krueger: \texttt{replication-checker}}
+  Does our folder reproduce its numbers from a fresh start?
+  \vspace{0.4em}
+  \begin{itemize}
+    \item File: \artifact{.claude/skills/replication-checker/SKILL.md}
+    \item Inside: a name, when to use it, numbered steps.
+    \item It runs the check command and confirms the data file is unchanged.
+    \item It reports \textcolor{codegreen}{\textbf{GREEN}}, \textbf{YELLOW} or \textcolor{codered}{\textbf{RED}}, with the output as evidence.
+    \item It never certifies causality.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{C5 \textperiodcentered\ Your turn}
+  \youtry{Thu 11:00--11:25}
+  \vspace{0.3em}
+  \begin{enumerate}
+    \item Read the Skill file before you trust it: what may it run?
+    \item Run it on \artifact{examples/card-krueger-toy/}.
+    \item Write down its colour and the one line of evidence behind it.
+  \end{enumerate}
+  \vspace{0.5em}
+  {\small Guide: \artifact{demos/slot2\_sdd\_skill\_pr.md} \textperiodcentered\ \artifact{exercises/06\_slot2\_sdd\_skill\_pr.md}}
+\end{frame}
+
+% ---------------------------------------------------------------- C6
+\begin{frame}{C6 \textperiodcentered\ Create a Skill}
+  \timebox{Thu 11:25--11:55}
+  \inplainwords{Make a folder and write a short file in it with a name, a line saying
+    when to use it, and numbered steps. Test it once and fix whatever was unclear.}
+  \likethis{writing down your referee-report checklist so a student can follow it.}
+\end{frame}
+
+\begin{frame}[fragile]{C6 \textperiodcentered\ Card--Krueger: \texttt{sample-restrictions-note}}
+  {\small \artifact{.claude/skills/sample-restrictions-note/SKILL.md} (shape of the file)}
+  \begin{lstlisting}[style=markdown,basicstyle=\ttfamily\footnotesize]
+---
+name: sample-restrictions-note
+description: Use after any change to the Card-Krueger sample.
+---
+1. List every rule that drops stores.
+2. Give the store count after each step.
+3. Quote the command that printed the counts (panel_workflow.py).
+4. Never edit the data file.
+  \end{lstlisting}
+  {\small The header lines between the dashes: its name and when to use it.}
+\end{frame}
+
+\begin{frame}{C6 \textperiodcentered\ Your turn}
+  \youtry{Thu 11:25--11:55}
+  \vspace{0.3em}
+  \begin{enumerate}
+    \item Fill in \artifact{templates/skill\_template.md}.
+    \item On your separate copy, save it as \artifact{.claude/skills/<name>/SKILL.md}.
+    \item Run it once on the Card--Krueger folder.
+    \item Fix the one step the agent misread.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Thursday wrap and Friday recap}
+  \timebox{Thu 11:55--12:00 \textperiodcentered\ Fri 09:30--09:35}
+  \vspace{0.3em}
+  \begin{block}{Tonight}
+    Draft one Skill for a task you repeat every week (\artifact{docs/between\_sessions.md}).
+  \end{block}
+  \vspace{0.4em}
+  \begin{block}{Friday 09:30: so far}
+    \concept{C1} agent \textperiodcentered\ \concept{C2} saved versions \textperiodcentered\
+    \concept{C3} rules file \textperiodcentered\ \concept{C4} to-do list \textperiodcentered\
+    \concept{C5--C6} Skills
+  \end{block}
+\end{frame}
+
+% ---------------------------------------------------------------- C7
+\begin{frame}{C7 \textperiodcentered\ Sub-agent: what it is}
+  \timebox{Fri 09:35--09:55}
+  \inplainwords{A sub-agent is a separate helper agent with its own blank notebook and
+    one narrow job. It reports back a summary. A Skill is instructions; a sub-agent
+    is another worker.}
+  \likethis{a recipe (Skill) vs a sous-chef you send to taste the sauce (sub-agent).}
+\end{frame}
+
+\begin{frame}{C7 \textperiodcentered\ Card--Krueger: Skill vs sub-agent}
+  \begin{tabular}{@{}p{0.22\linewidth}p{0.34\linewidth}p{0.36\linewidth}@{}}
+    \toprule
+     & \textbf{Skill} & \textbf{Sub-agent} \\
+    \midrule
+    What it is & Instructions & Another worker \\
+    Memory & Shares your chat & Its own blank notebook \\
+    Gives back & The finished task & A short report \\
+    Our example & \artifact{replication-checker} & \artifact{data-reviewer} \\
+    \bottomrule
+  \end{tabular}
+  \vspace{0.6em}
+
+  \artifact{data-reviewer} looks only at panel balance and NJ/PA coding. It never edits.
+\end{frame}
+
+\begin{frame}{C7 \textperiodcentered\ Your turn}
+  \youtry{Fri 09:35--09:55}
+  \vspace{0.3em}
+  Open \artifact{.claude/agents/data-reviewer.md} and mark three things:
+  \begin{enumerate}
+    \item \textbf{The job:} what does it look at?
+    \item \textbf{The limits:} what is it not allowed to do?
+    \item \textbf{The report:} what does it hand back?
+  \end{enumerate}
+\end{frame}
+
+% ---------------------------------------------------------------- C8
+\begin{frame}{C8 \textperiodcentered\ Rule of thumb: Skill or sub-agent?}
+  \timebox{Fri 09:55--10:15}
+  \inplainwords{Same steps done the same way: a \textbf{Skill}.\\
+    Fresh pair of eyes, a big messy job, or work that can run at the same time:
+    a \textbf{sub-agent}.}
+  \likethis{a checklist for yourself vs asking a colleague to referee.}
+\end{frame}
+
+\begin{frame}{C8 \textperiodcentered\ Card--Krueger: two tasks}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.47\textwidth}
+      \begin{block}{Skill}
+        ``Recompute the DiD the same way each time.''
+      \end{block}
+    \end{column}
+    \begin{column}{0.47\textwidth}
+      \begin{block}{Sub-agent}
+        ``Independently check my data coding.''
+      \end{block}
+    \end{column}
+  \end{columns}
+  \vspace{0.8em}
+  You stay in the main chat: you decide, approve and merge.
+\end{frame}
+
+% Answer key: 1 Skill, 2 sub-agent, 3 Skill, 4 sub-agent, 5 Skill, 6 sub-agent.
+\begin{frame}{C8 \textperiodcentered\ Your turn: sort six tasks}
+  \youtry{Fri 09:55--10:15 \textperiodcentered\ then compare with a neighbour}
+  \vspace{0.2em}
+  \small
+  \begin{tabular}{@{}rp{0.68\linewidth}l@{}}
+    \toprule
+    & \textbf{Card--Krueger task} & \textbf{Skill or sub-agent?} \\
+    \midrule
+    1 & Recompute group means after every data change & \\
+    2 & Check NJ/PA coding without seeing my code & \\
+    3 & Write the sample-restrictions note the same way & \\
+    4 & Review literature claims while I fix code & \\
+    5 & Check the folder reproduces from a fresh start & \\
+    6 & Referee my pull request with fresh eyes & \\
+    \bottomrule
+  \end{tabular}
+\end{frame}
