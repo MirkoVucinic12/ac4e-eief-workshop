@@ -36,12 +36,13 @@ Antonio Mele · Claude Code, Codex, and Cursor
 
 One example all day: the synthetic Card–Krueger panel
 
-Paste this into Claude Code, Codex, or Cursor. It must ask where to clone before it clones.
+Paste this into Claude Code, Codex, or Cursor. It must fork first, then ask where to clone the fork.
 
 ```text
-Clone https://github.com/meleantonio/ac4e-eief-workshop.
-Before you clone, ask me which folder to put it in.
-Wait for my answer, then clone only into that folder.
+Fork https://github.com/meleantonio/ac4e-eief-workshop.
+Before you clone, ask me which folder to put my fork in.
+Wait for my answer, then clone only my fork into that folder.
+Do not clone or push to the original repository.
 ```
 
 Beamer projector: `slides/workshop/workshop_slides.pdf`
