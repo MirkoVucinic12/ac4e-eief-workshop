@@ -148,15 +148,15 @@ Guide: `demos/slot1_workflows.md` · `exercises/04_slot1_workflows.md`
 
 ---
 
-# Five words we use all day
+# GitHub Flow: copy, review, merge
 
-| Word | Meaning |
-| --- | --- |
-| Project folder | All the course files, with their full history |
-| Saved version | A snapshot of the files, with a one-line note |
-| Separate copy | A safe place to try changes (a "branch") |
-| List of changes | The lines added and removed, side by side |
-| Pull request | A request to merge changes, with a review page |
+The straight line is the main version. The picture still calls it `master`. Your change takes the lower path, then comes back.
+
+![GitHub Flow diagram. The master branch is a straight line. A lower path creates a branch, commits changes, opens a pull request, gets feedback, tests, and merges back.](workshop/figures/github-flow.png)
+
+**create branch** = separate copy · **commit changes** = saved version  
+**Pull Request** and **get feedback** = the review · **test changes** = run the check  
+**merge branch** = joins the main line
 
 ---
 

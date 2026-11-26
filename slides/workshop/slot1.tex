@@ -70,18 +70,23 @@
   \likethis{Track Changes plus dated ``save as'' copies, shared with coauthors.}
 \end{frame}
 
-\begin{frame}{Five words we use all day}
-  \begin{tabular}{@{}p{0.27\linewidth}p{0.66\linewidth}@{}}
-    \toprule
-    \textbf{Word} & \textbf{Meaning} \\
-    \midrule
-    Project folder & All the course files, with their full history \\
-    Saved version & A snapshot of the files, with a one-line note \\
-    Separate copy & A safe place to try changes (a ``branch'') \\
-    List of changes & The lines added and removed, side by side \\
-    Pull request & A request to merge changes, with a review page \\
-    \bottomrule
-  \end{tabular}
+% Vendored so the projector PDF builds offline. Build Azure, ``GitHub Flow'' (2018):
+% https://user-images.githubusercontent.com/12570515/262074692-01e51004-343b-43dc-9f54-4662a69d7384.png
+\begin{frame}{GitHub Flow: copy, review, merge}
+  \centering
+  {\small The straight line is the main version. The picture still calls it \texttt{master}.\\
+  Your change takes the lower path, then comes back.}
+
+  \vspace{0.25em}
+  \includegraphics[width=\linewidth,height=0.52\textheight,keepaspectratio]{figures/github-flow.png}
+
+  \vspace{0.3em}
+  {\small
+  \textbf{create branch} = separate copy \quad
+  \textbf{commit changes} = saved version\\[0.15em]
+  \textbf{Pull Request} and \textbf{get feedback} = the review \quad
+  \textbf{test changes} = run the check\\[0.15em]
+  \textbf{merge branch} = joins the main line}
 \end{frame}
 
 \begin{frame}{Card--Krueger: reading the agent's edit}
