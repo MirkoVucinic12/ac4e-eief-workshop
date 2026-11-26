@@ -5,7 +5,7 @@ Fill this in Thu 09:10–09:55. You change this file in your first pull request.
 ## Primary tool
 
 - [ ] Claude Code (workshop primary)
-- [ ] Codex
+- [x] Codex
 - [ ] Cursor
 - [ ] Other: _______________
 
