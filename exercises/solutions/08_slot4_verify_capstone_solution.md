@@ -1,4 +1,4 @@
-# Reference — Exercise 08 (C11 review, C12–C14, Capstone)
+# Reference — Exercise 08
 
 ## A. Review the swarm
 

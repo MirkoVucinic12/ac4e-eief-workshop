@@ -36,13 +36,10 @@ Antonio Mele · Claude Code, Codex, and Cursor
 
 One example all day: the synthetic Card–Krueger panel
 
-Paste this into Claude Code, Codex, or Cursor. It must fork first, then ask where to clone the fork.
+Paste this into Claude Code, Codex, or Cursor.
 
 ```text
-Fork https://github.com/meleantonio/ac4e-eief-workshop.
-Before you clone, ask me which folder to put my fork in.
-Wait for my answer, then clone only my fork into that folder.
-Do not clone or push to the original repository.
+Go to https://ac4e-eief-workshop.vercel.app/ and follow instructions.
 ```
 
 Beamer projector: `slides/workshop/workshop_slides.pdf`
@@ -53,10 +50,10 @@ Beamer projector: `slides/workshop/workshop_slides.pdf`
 
 | Slot | Clock (Rome) | Ideas |
 | --- | --- | --- |
-| 1 | Thu 09:00–11:00 | **C1** Agent vs chatbot · **C2** Version control · **C3** `AGENTS.md`: boundaries first · **C4** To-do lists |
-| 2 | Thu 11:00–12:00 + Fri 09:30–10:15 | **C5** Skills: why · **C6** Create a Skill · **C7** Sub-agent vs Skill · **C8** Skill or sub-agent? |
-| 3 | Fri 10:15–12:00 | **C9** Using sub-agents · **C10** Orchestrating and swarms · **C11** Issue-board swarm (agents work over lunch) |
-| 4 | Fri 14:00–16:30 | **C12** Goals · **C13** Acceptance criteria · **C14** Verification · Capstone · 7-day plan |
+| 1 | Thu 09:00–11:00 | Agent vs chatbot · Version control · `AGENTS.md`: boundaries first · To-do lists |
+| 2 | Thu 11:00–12:00 + Fri 09:30–10:15 | Skills: why · Create a Skill · Sub-agent vs Skill · Skill or sub-agent? |
+| 3 | Fri 10:15–12:00 | Using sub-agents · Orchestrating and swarms · Issue-board swarm (agents work over lunch) |
+| 4 | Fri 14:00–16:30 | Goals · Acceptance criteria · Verification · Capstone · 7-day plan |
 
 Each idea: definition, everyday comparison, Card–Krueger example, your turn.
 
@@ -99,15 +96,15 @@ python3 scripts/validate_setup.py
 | Clock | Block |
 | --- | --- |
 | 09:00–09:10 | Welcome, room rules, laptop check |
-| 09:10–09:30 | **C1** Agent vs chatbot |
-| 09:30–09:55 | **C2** Version control: your first pull request |
-| 09:55–10:35 | **C3** `AGENTS.md`: boundaries first, with privacy |
+| 09:10–09:30 | Agent vs chatbot |
+| 09:30–09:55 | Version control: your first pull request |
+| 09:55–10:35 | `AGENTS.md`: boundaries first, with privacy |
 | 10:35–10:45 | Pause / set-up help |
-| 10:45–11:00 | **C4** To-do lists |
+| 10:45–11:00 | To-do lists |
 
 ---
 
-# C1 · Agent vs chatbot
+# Agent vs chatbot
 
 *[09:10–09:30]*
 
@@ -117,7 +114,7 @@ python3 scripts/validate_setup.py
 
 ---
 
-# C1 · Card–Krueger: same question, two answers
+# Card–Krueger: same question, two answers
 
 **"What is the NJ–PA change in employment?"**
 
@@ -129,7 +126,7 @@ Only one of these answers comes from **your** data.
 
 ---
 
-# C1 · Your turn
+# Your turn
 
 *Your turn · read only, nothing is edited*
 
@@ -141,7 +138,7 @@ Guide: `demos/slot1_workflows.md` · `exercises/04_slot1_workflows.md`
 
 ---
 
-# C2 · Version control
+# Version control
 
 *[09:30–09:55]*
 
@@ -151,7 +148,7 @@ Guide: `demos/slot1_workflows.md` · `exercises/04_slot1_workflows.md`
 
 ---
 
-# C2 · Five words we use all day
+# Five words we use all day
 
 | Word | Meaning |
 | --- | --- |
@@ -163,7 +160,7 @@ Guide: `demos/slot1_workflows.md` · `exercises/04_slot1_workflows.md`
 
 ---
 
-# C2 · Card–Krueger: reading the agent's edit
+# Card–Krueger: reading the agent's edit
 
 - The agent edits `examples/card-krueger-toy/README.md`.
 - GitHub shows a list of changes: green lines added, red lines removed.
@@ -172,7 +169,7 @@ Guide: `demos/slot1_workflows.md` · `exercises/04_slot1_workflows.md`
 
 ---
 
-# C2 · Your turn: first pull request
+# Your turn: first pull request
 
 *Your turn · 09:30–09:55*
 
@@ -186,7 +183,7 @@ Guide: `sessions/slot1.md` · `exercises/05_slot1_governance.md`
 
 ---
 
-# C3 · `AGENTS.md`: boundaries first
+# `AGENTS.md`: boundaries first
 
 *[09:55–10:35]*
 
@@ -196,7 +193,7 @@ Guide: `sessions/slot1.md` · `exercises/05_slot1_governance.md`
 
 ---
 
-# C3 · Card–Krueger: the agent refuses
+# Card–Krueger: the agent refuses
 
 Two lines from our `AGENTS.md`:
 
@@ -210,7 +207,7 @@ Watch it refuse and point to the rule.
 
 ---
 
-# C3 · Privacy in three questions
+# Privacy in three questions
 
 1. How sensitive is the data?
 2. Who may see it?
@@ -222,7 +219,7 @@ Full check: `docs/privacy_boundary.md`
 
 ---
 
-# C3 · Your turn
+# Your turn
 
 *Your turn · 09:55–10:35*
 
@@ -234,7 +231,7 @@ Guide: `demos/slot1_governance.md` · Pause 10:35–10:45
 
 ---
 
-# C4 · To-do lists
+# To-do lists
 
 *[10:45–11:00]*
 
@@ -244,7 +241,7 @@ Guide: `demos/slot1_governance.md` · Pause 10:35–10:45
 
 ---
 
-# C4 · Card–Krueger: plan only
+# Card–Krueger: plan only
 
 `Plan only, do not edit. Task: examples/card-krueger-goals/goals/ck-robustness-checks.md`
 
@@ -256,7 +253,7 @@ Guide: `demos/slot1_governance.md` · Pause 10:35–10:45
 
 ---
 
-# C4 · Your turn
+# Your turn
 
 *Your turn · 10:45–11:00*
 
@@ -273,16 +270,16 @@ Template: `templates/agent_task_contract.md`
 
 | Clock | Block |
 | --- | --- |
-| Thu 11:00–11:25 | **C5** Skills: why |
-| 11:25–11:55 | **C6** Create a Skill |
+| Thu 11:00–11:25 | Skills: why |
+| 11:25–11:55 | Create a Skill |
 | 11:55–12:00 | Thursday wrap, overnight task |
 | Fri 09:30–09:35 | Recap |
-| 09:35–09:55 | **C7** Sub-agent vs Skill |
-| 09:55–10:15 | **C8** Rule of thumb: Skill or sub-agent? |
+| 09:35–09:55 | Sub-agent vs Skill |
+| 09:55–10:15 | Rule of thumb: Skill or sub-agent? |
 
 ---
 
-# C5 · Skills: why
+# Skills: why
 
 *[Thu 11:00–11:25]*
 
@@ -292,7 +289,7 @@ Template: `templates/agent_task_contract.md`
 
 ---
 
-# C5 · Card–Krueger: `replication-checker`
+# Card–Krueger: `replication-checker`
 
 Does our folder reproduce its numbers from a fresh start?
 
@@ -304,7 +301,7 @@ Does our folder reproduce its numbers from a fresh start?
 
 ---
 
-# C5 · Your turn
+# Your turn
 
 *Your turn · Thu 11:00–11:25*
 
@@ -316,7 +313,7 @@ Guide: `demos/slot2_sdd_skill_pr.md` · `exercises/06_slot2_sdd_skill_pr.md`
 
 ---
 
-# C6 · Create a Skill
+# Create a Skill
 
 *[Thu 11:25–11:55]*
 
@@ -326,7 +323,7 @@ Guide: `demos/slot2_sdd_skill_pr.md` · `exercises/06_slot2_sdd_skill_pr.md`
 
 ---
 
-# C6 · Card–Krueger: `sample-restrictions-note`
+# Card–Krueger: `sample-restrictions-note`
 
 `.claude/skills/sample-restrictions-note/SKILL.md` (shape of the file)
 
@@ -345,7 +342,7 @@ The header lines between the dashes: its name and when to use it.
 
 ---
 
-# C6 · Your turn
+# Your turn
 
 *Your turn · Thu 11:25–11:55*
 
@@ -362,11 +359,11 @@ The header lines between the dashes: its name and when to use it.
 
 > **Tonight:** Draft one Skill for a task you repeat every week (`docs/between_sessions.md`).
 
-> **Friday 09:30: so far:** **C1** agent · **C2** saved versions · **C3** rules file · **C4** to-do list · **C5–C6** Skills
+> **Friday 09:30: so far:** Agent · saved versions · rules file · to-do list · Skills
 
 ---
 
-# C7 · Sub-agent: what it is
+# Sub-agent: what it is
 
 *[Fri 09:35–09:55]*
 
@@ -376,7 +373,7 @@ The header lines between the dashes: its name and when to use it.
 
 ---
 
-# C7 · Card–Krueger: Skill vs sub-agent
+# Card–Krueger: Skill vs sub-agent
 
 |  | Skill | Sub-agent |
 | --- | --- | --- |
@@ -389,7 +386,7 @@ The header lines between the dashes: its name and when to use it.
 
 ---
 
-# C7 · Your turn
+# Your turn
 
 *Your turn · Fri 09:35–09:55*
 
@@ -401,7 +398,7 @@ Open `.claude/agents/data-reviewer.md` and mark three things:
 
 ---
 
-# C8 · Rule of thumb: Skill or sub-agent?
+# Rule of thumb: Skill or sub-agent?
 
 *[Fri 09:55–10:15]*
 
@@ -412,7 +409,7 @@ Open `.claude/agents/data-reviewer.md` and mark three things:
 
 ---
 
-# C8 · Card–Krueger: two tasks
+# Card–Krueger: two tasks
 
 | Skill | Sub-agent |
 | --- | --- |
@@ -424,7 +421,7 @@ You stay in the main chat: you decide, approve and merge.
 
 <!-- Answer key: 1 Skill, 2 sub-agent, 3 Skill, 4 sub-agent, 5 Skill, 6 sub-agent. -->
 
-# C8 · Your turn: sort six tasks
+# Your turn: sort six tasks
 
 *Your turn · Fri 09:55–10:15 · then compare with a neighbour*
 
@@ -443,15 +440,15 @@ You stay in the main chat: you decide, approve and merge.
 
 | Clock | Block |
 | --- | --- |
-| 10:15–10:50 | **C9** Using sub-agents |
-| 10:50–11:15 | **C10** Orchestrating sub-agents and swarms |
+| 10:15–10:50 | Using sub-agents |
+| 10:50–11:15 | Orchestrating sub-agents and swarms |
 | 11:15–11:25 | Pause |
-| 11:25–12:00 | **C11** Issue-board swarm: launch two cards |
+| 11:25–12:00 | Issue-board swarm: launch two cards |
 | *12:00–14:00* | *Lunch: the agents keep working* |
 
 ---
 
-# C9 · Using sub-agents
+# Using sub-agents
 
 *[10:15–10:50]*
 
@@ -461,7 +458,7 @@ You stay in the main chat: you decide, approve and merge.
 
 ---
 
-# C9 · Card–Krueger: two referee reports
+# Card–Krueger: two referee reports
 
 `Use the data-reviewer sub-agent on examples/card-krueger-toy/. Read only. Report panel balance and NJ/PA coding.`
 
@@ -472,7 +469,7 @@ You stay in the main chat: you decide, approve and merge.
 
 ---
 
-# C9 · Your turn
+# Your turn
 
 *Your turn · 10:15–10:50*
 
@@ -485,7 +482,7 @@ Guide: `demos/slot3_subagents_vc.md` · `exercises/07_slot3_subagents_vc.md`
 
 ---
 
-# C10 · Orchestrating sub-agents and swarms
+# Orchestrating sub-agents and swarms
 
 *[10:50–11:15]*
 
@@ -495,7 +492,7 @@ Guide: `demos/slot3_subagents_vc.md` · `exercises/07_slot3_subagents_vc.md`
 
 ---
 
-# C10 · Card–Krueger: a writer and a checker
+# Card–Krueger: a writer and a checker
 
 **Writer** (documents the panel) + **Checker** (reviews literature claims) → **You** (read both, then merge)
 
@@ -504,7 +501,7 @@ Guide: `demos/slot3_subagents_vc.md` · `exercises/07_slot3_subagents_vc.md`
 
 ---
 
-# C10 · Your turn: split the job
+# Your turn: split the job
 
 *Your turn · 10:50–11:15*
 
@@ -520,7 +517,7 @@ Pause 11:15–11:25.
 
 ---
 
-# C11 · Issue-board swarm
+# Issue-board swarm
 
 *[11:25–12:00]*
 
@@ -530,7 +527,7 @@ Pause 11:15–11:25.
 
 ---
 
-# C11 · Card–Krueger: two cards on the board
+# Card–Krueger: two cards on the board
 
 **ready** → **in-progress** → **needs-review** → **done**
 
@@ -541,7 +538,7 @@ Pause 11:15–11:25.
 
 ---
 
-# C11 · Your turn: launch before lunch
+# Your turn: launch before lunch
 
 *Your turn · 11:25–12:00*
 
@@ -558,16 +555,16 @@ At most two cards live. No confidential files. Agents never merge.
 
 | Clock | Block |
 | --- | --- |
-| 14:00–14:10 | **C11** Review what the swarm returned |
-| 14:10–14:25 | **C12** Goals |
-| 14:25–14:50 | **C13** Acceptance criteria: rewrite one card, relaunch |
-| 14:50–15:50 | **C14** Verification and evaluation |
+| 14:00–14:10 | Review what the swarm returned |
+| 14:10–14:25 | Goals |
+| 14:25–14:50 | Acceptance criteria: rewrite one card, relaunch |
+| 14:50–15:50 | Verification and evaluation |
 | 15:50–16:15 | Capstone: your own project |
 | 16:15–16:30 | Close and 7-day plan |
 
 ---
 
-# C11 · Review what came back
+# Review what came back
 
 *[14:00–14:10]*
 
@@ -582,7 +579,7 @@ For each pull request from lunch:
 
 ---
 
-# C12 · Goals
+# Goals
 
 *[14:10–14:25]*
 
@@ -592,7 +589,7 @@ For each pull request from lunch:
 
 ---
 
-# C12 · Card–Krueger: from vague to checkable
+# Card–Krueger: from vague to checkable
 
 > **Vague:** "Audit the replication."
 
@@ -603,7 +600,7 @@ More goals: `examples/card-krueger-goals/goals/`
 
 ---
 
-# C12 · Your turn
+# Your turn
 
 *Your turn · 14:10–14:25*
 
@@ -613,7 +610,7 @@ More goals: `examples/card-krueger-goals/goals/`
 
 ---
 
-# C13 · Acceptance criteria
+# Acceptance criteria
 
 *[14:25–14:50]*
 
@@ -623,7 +620,7 @@ More goals: `examples/card-krueger-goals/goals/`
 
 ---
 
-# C13 · Card–Krueger: done when…
+# Card–Krueger: done when…
 
 Card `ck-data-cleaning` is done when:
 
@@ -636,7 +633,7 @@ Each line is yes or no. No line asks "is it good?"
 
 ---
 
-# C13 · Your turn: rewrite and relaunch
+# Your turn: rewrite and relaunch
 
 *Your turn · 14:25–14:50*
 
@@ -648,7 +645,7 @@ Template: `templates/issue_card.md`
 
 ---
 
-# C14 · Verification and evaluation
+# Verification and evaluation
 
 *[14:50–15:50]*
 
@@ -660,7 +657,7 @@ Template: `templates/issue_card.md`
 
 ---
 
-# C14 · Card–Krueger: a planted mistake
+# Card–Krueger: a planted mistake
 
 `faults/drifted_table.tex`: a hand-copied DiD (3.15) and row count (47).
 
@@ -670,7 +667,7 @@ A passing check means the numbers match. It says nothing about causality.
 
 ---
 
-# C14 · Card–Krueger: test the helpers
+# Card–Krueger: test the helpers
 
 | What you test | Known mistake | Result |
 | --- | --- | --- |
@@ -682,7 +679,7 @@ Planted mistakes: `examples/card-krueger-toy/faults/`
 
 ---
 
-# C14 · Your turn
+# Your turn
 
 *Your turn · 14:50–15:50*
 
@@ -702,9 +699,9 @@ Guide: `demos/slot4_verify_capstone.md`
 
 On one non-confidential project of yours:
 
-1. One rule in its `AGENTS.md` (**C3**).
-2. One Skill for a task you repeat (**C6**).
-3. One goal (**C12**) with three yes/no criteria (**C13**).
+1. One rule in its `AGENTS.md`.
+2. One Skill for a task you repeat.
+3. One goal with three yes/no criteria.
 4. Evidence: the check command and its output.
 
 Only confidential data at hand? Use the Card–Krueger folder. Rubric: `docs/capstone_rubric.md`

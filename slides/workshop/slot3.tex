@@ -1,6 +1,6 @@
-% Slot 3: C9--C11 launch (Fri 27 Nov 10:15--12:00 Rome)
+% Slot 3 (Fri 27 Nov 10:15--12:00 Rome)
 
-\section{Slot 3: C9--C11}
+\section{Slot 3}
 
 \begin{frame}{Slot 3 \textperiodcentered\ Fri 10:15--12:00}
   \begin{center}
@@ -8,25 +8,25 @@
       \toprule
       \textbf{Clock} & \textbf{Block} \\
       \midrule
-      10:15--10:50 & \concept{C9} Using sub-agents \\
-      10:50--11:15 & \concept{C10} Orchestrating sub-agents and swarms \\
+      10:15--10:50 & Using sub-agents \\
+      10:50--11:15 & Orchestrating sub-agents and swarms \\
       11:15--11:25 & Pause \\
-      11:25--12:00 & \concept{C11} Issue-board swarm: launch two cards \\
+      11:25--12:00 & Issue-board swarm: launch two cards \\
       \textit{12:00--14:00} & \textit{Lunch: the agents keep working} \\
       \bottomrule
     \end{tabular}
   \end{center}
 \end{frame}
 
-% ---------------------------------------------------------------- C9
-\begin{frame}{C9 \textperiodcentered\ Using sub-agents}
+% ----------------------------------------------------------------
+\begin{frame}{Using sub-agents}
   \timebox{10:15--10:50}
   \inplainwords{Call the helper by name, give it one narrow instruction, keep it
     read-only and read its report before you act. You decide what to do with the report.}
   \likethis{sending a draft to two referees who don't talk to each other.}
 \end{frame}
 
-\begin{frame}{C9 \textperiodcentered\ Card--Krueger: two referee reports}
+\begin{frame}{Card--Krueger: two referee reports}
   \prompttext{\raggedright Use the data-reviewer sub-agent on examples/card-krueger-toy/. Read only. Report panel balance and NJ/PA coding.}
   \vspace{0.4em}
   \prompttext{\raggedright Use the literature-reviewer sub-agent on the same folder. Read only. Check the claims against the references.}
@@ -37,7 +37,7 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{C9 \textperiodcentered\ Your turn}
+\begin{frame}{Your turn}
   \youtry{10:15--10:50}
   \vspace{0.3em}
   \begin{enumerate}
@@ -50,8 +50,8 @@
   {\small Guide: \artifact{demos/slot3\_subagents\_vc.md} \textperiodcentered\ \artifact{exercises/07\_slot3\_subagents\_vc.md}}
 \end{frame}
 
-% ---------------------------------------------------------------- C10
-\begin{frame}{C10 \textperiodcentered\ Orchestrating sub-agents and swarms}
+% ----------------------------------------------------------------
+\begin{frame}{Orchestrating sub-agents and swarms}
   \timebox{10:50--11:15}
   \inplainwords{Orchestrating means splitting a job into parts, handing each part to a
     different agent, and putting the results back together. A swarm is many agents
@@ -59,7 +59,7 @@
   \likethis{a PI running several RAs, each with their own files.}
 \end{frame}
 
-\begin{frame}{C10 \textperiodcentered\ Card--Krueger: a writer and a checker}
+\begin{frame}{Card--Krueger: a writer and a checker}
   \begin{center}
     \begin{tikzpicture}[
         node distance=1.0cm,
@@ -80,7 +80,7 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{C10 \textperiodcentered\ Your turn: split the job}
+\begin{frame}{Your turn: split the job}
   \youtry{10:50--11:15}
   \vspace{0.3em}
   Split ``replicate and extend Card--Krueger'' into three jobs that share no files.
@@ -100,8 +100,8 @@
   {\small Pause 11:15--11:25.}
 \end{frame}
 
-% ---------------------------------------------------------------- C11
-\begin{frame}{C11 \textperiodcentered\ Issue-board swarm}
+% ----------------------------------------------------------------
+\begin{frame}{Issue-board swarm}
   \timebox{11:25--12:00}
   \inplainwords{Each job is written as an issue, a to-do card on GitHub. Agents pick
     up cards marked ready, work in their own copy, and send back a pull request
@@ -109,7 +109,7 @@
   \likethis{a job board in a shared office: whoever is free takes the next card.}
 \end{frame}
 
-\begin{frame}{C11 \textperiodcentered\ Card--Krueger: two cards on the board}
+\begin{frame}{Card--Krueger: two cards on the board}
   \begin{center}
     \begin{tikzpicture}[
         node distance=0.55cm,
@@ -134,7 +134,7 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{C11 \textperiodcentered\ Your turn: launch before lunch}
+\begin{frame}{Your turn: launch before lunch}
   \youtry{11:25--12:00}
   \vspace{0.3em}
   \begin{enumerate}

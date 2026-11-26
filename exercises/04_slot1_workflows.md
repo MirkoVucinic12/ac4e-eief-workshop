@@ -1,8 +1,8 @@
-# Exercise 04 — C1 Agent vs chatbot, C2 Version control
+# Exercise 04 — Agent vs chatbot, Version control
 
 **When:** Thu 26 Nov 2026, 09:10–09:55 (Rome). **Example:** synthetic Card–Krueger panel.
 
-## A. Agent vs chatbot (C1, 10 min, read-only)
+## A. Agent vs chatbot (10 min, read-only)
 
 1. In a plain browser chat, ask:
 
@@ -21,7 +21,7 @@
 
 3. In `notes/lane_choice.md`, write one line: what did the agent do that the chatbot could not?
 
-## B. Your first pull request (C2, 15 min)
+## B. Your first pull request (15 min)
 
 1. Make a separate copy called `slot1-first-pr`.
 2. In `notes/lane_choice.md`, tick the tool you use. Change nothing else.

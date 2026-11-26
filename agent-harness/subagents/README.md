@@ -7,7 +7,7 @@ job. It reports back a summary; you decide what to do with it.
 at the same time. If the same steps just need doing the same way each time, write a
 Skill instead (see [`../skills/README.md`](../skills/README.md)).
 
-## How to use one (C9)
+## How to use one
 
 1. Call it by name: "Use `data-reviewer` to review `examples/card-krueger-toy/`."
 2. Give it one narrow instruction.

@@ -10,13 +10,13 @@ Install steps are in [`SETUP.md`](../SETUP.md).
 
 | Concept | In Codex |
 | --- | --- |
-| Rules file (C3) | `AGENTS.md`, read automatically |
-| To-do list (C4) | Ask for a plan first ("Plan only, do not edit"); Codex shows its to-do list as it works |
-| Skills (C5, C6) | `.agents/skills/<name>/SKILL.md`; call by name |
-| Sub-agents (C7, C9) | Copy `agent-harness/codex/agents/*.toml` to `.codex/agents/`; "Use `data-reviewer` to review the panel" |
-| Goal (C12) | `/goal <one sentence>` (Codex 0.128.0 or later); `/goal clear` removes it |
-| Cloud agents from issues (C11) | Codex cloud tasks, or `@codex` in a GitHub issue if the Codex GitHub app is installed |
-| Automatic check after each edit (C14, optional) | `.codex/hooks.json`; example in `agent-harness/codex/hooks/` |
+| Rules file | `AGENTS.md`, read automatically |
+| To-do list | Ask for a plan first ("Plan only, do not edit"); Codex shows its to-do list as it works |
+| Skills | `.agents/skills/<name>/SKILL.md`; call by name |
+| Sub-agents | Copy `agent-harness/codex/agents/*.toml` to `.codex/agents/`; "Use `data-reviewer` to review the panel" |
+| Goal | `/goal <one sentence>` (Codex 0.128.0 or later); `/goal clear` removes it |
+| Cloud agents from issues | Codex cloud tasks, or `@codex` in a GitHub issue if the Codex GitHub app is installed |
+| Automatic check after each edit (optional) | `.codex/hooks.json`; example in `agent-harness/codex/hooks/` |
 
 ## Habits
 

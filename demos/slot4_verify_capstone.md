@@ -1,9 +1,9 @@
-# Demo — C11 review, C12 Goals, C13 Acceptance criteria, C14 Verification, Capstone
+# Demo — review, Goals, Acceptance criteria, Verification, Capstone
 
 **When:** Fri 27 Nov 2026, 14:00–16:30 (Rome).
 **Example:** the synthetic Card–Krueger panel.
 
-## C11 Review what the swarm returned (14:00–14:10)
+## Review what the swarm returned (14:00–14:10)
 
 For each pull request linked to a lunchtime card:
 
@@ -15,7 +15,7 @@ List blockers first.
 
 Read the list of changes yourself. Move the card to `done` (merge) or back to `ready` with a comment.
 
-## C12 Goal (14:10–14:25)
+## Goal (14:10–14:25)
 
 **Say:** one sentence describing the finished state, in a form you can check. Where to stop, not how to get there. The satnav destination.
 
@@ -29,7 +29,7 @@ Claude Code and Codex: `/goal …`. Cursor: put the sentence as the last line of
 
 Participants rewrite one lunchtime card's vague title as a one-sentence goal.
 
-## C13 Acceptance criterion (14:25–14:50)
+## Acceptance criterion (14:25–14:50)
 
 **Say:** a yes/no check that says when the job counts as done. A building inspector's checklist. Each agent knows when to stop; you check many results fast.
 
@@ -42,7 +42,7 @@ Example criteria for `ck-data-cleaning`:
 
 Participants add 3 criteria to one card, relaunch it, and judge the new pull request only against them.
 
-## C14 Verification and evaluation (14:50–15:50)
+## Verification and evaluation (14:50–15:50)
 
 **Say:** three parts. Need less checking (small jobs, protected files, clear done-when checks). Automate the rest (a check command). Then test your Skills, sub-agents and whole set-up against known mistakes, like planting an error in a paper to test a referee.
 

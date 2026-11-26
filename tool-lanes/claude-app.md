@@ -10,13 +10,13 @@ The primary lane for the workshop. Install steps are in [`SETUP.md`](../SETUP.md
 
 | Concept | In Claude Code |
 | --- | --- |
-| Rules file (C3) | `CLAUDE.md`, which points to `AGENTS.md` |
-| To-do list (C4) | Plan mode (Shift+Tab); the agent shows its to-do list before acting |
-| Skills (C5, C6) | `.claude/skills/<name>/SKILL.md`; call by name, e.g. "Use the `replication-checker` Skill" |
-| Sub-agents (C7, C9) | `.claude/agents/<name>.md`; "Use the `data-reviewer` sub-agent on `examples/card-krueger-toy/`"; `/agents` lists them |
-| Goal (C12) | `/goal <one sentence>`; `/goal clear` removes it |
-| Cloud agents from issues (C11) | Claude Code on the web, or `@claude` in a GitHub issue if the Claude GitHub app is installed |
-| Automatic check after each edit (C14, optional) | `.claude/settings.json`; example in `agent-harness/claude/hooks/` |
+| Rules file | `CLAUDE.md`, which points to `AGENTS.md` |
+| To-do list | Plan mode (Shift+Tab); the agent shows its to-do list before acting |
+| Skills | `.claude/skills/<name>/SKILL.md`; call by name, e.g. "Use the `replication-checker` Skill" |
+| Sub-agents | `.claude/agents/<name>.md`; "Use the `data-reviewer` sub-agent on `examples/card-krueger-toy/`"; `/agents` lists them |
+| Goal | `/goal <one sentence>`; `/goal clear` removes it |
+| Cloud agents from issues | Claude Code on the web, or `@claude` in a GitHub issue if the Claude GitHub app is installed |
+| Automatic check after each edit (optional) | `.claude/settings.json`; example in `agent-harness/claude/hooks/` |
 
 ## Habits
 

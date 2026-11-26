@@ -1,11 +1,10 @@
 # Card–Krueger issue cards
 
-Issue cards for C10 (orchestrating), C11 (issue-board swarm) and C13 (acceptance
-criteria). Each card has a one-sentence goal, the files the agent may touch, 3–4
+Issue cards for orchestrating, the issue-board swarm, and acceptance criteria. Each card has a one-sentence goal, the files the agent may touch, 3–4
 yes/no acceptance criteria and the check command. Copy a card into a GitHub issue
 with [`../../templates/issue_card.md`](../../templates/issue_card.md).
 
-## C10: one writer, one checker
+## One writer, one checker
 
 | Role | Card | May touch |
 | --- | --- | --- |
@@ -14,7 +13,7 @@ with [`../../templates/issue_card.md`](../../templates/issue_card.md).
 
 The two cards share no files, so the agents cannot overwrite each other.
 
-## C11: the lunchtime swarm (two cards only)
+## The lunchtime swarm (two cards only)
 
 | Card | Separate copy (branch) | Reviewer |
 | --- | --- | --- |

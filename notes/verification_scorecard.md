@@ -1,6 +1,6 @@
-# Verification scorecard (C14)
+# Verification scorecard
 
-Fill during C14 (Fri 14:50–15:50).
+Fill this in Fri 14:50–15:50.
 
 ## Planted fault
 

@@ -7,8 +7,8 @@ read-only question to the planted-error check, works on this one folder.
 | Path | Role | What is inside |
 | --- | --- | --- |
 | [`card-krueger-toy/`](card-krueger-toy/) | **The workshop example** | Data, two scripts, planted errors, and the 14-concept [workshop path](card-krueger-toy/README.md#workshop-path) |
-| [`card-krueger-swarm/`](card-krueger-swarm/) | Issue cards (C10, C11, C13) | Two live cards for the lunchtime swarm, two spares |
-| [`card-krueger-goals/`](card-krueger-goals/) | Goal briefs (C4, C12) | Three short briefs, each opening with a one-sentence goal |
+| [`card-krueger-swarm/`](card-krueger-swarm/) | Issue cards | Two live cards for the lunchtime swarm, two spares |
+| [`card-krueger-goals/`](card-krueger-goals/) | Goal briefs | Three short briefs, each opening with a one-sentence goal |
 | [`mini-economics/`](mini-economics/) | Extra, not on the workshop path | Structural and theory scripts; their checks still run |
 | [`r_stata_equivalence.md`](r_stata_equivalence.md) | Reference only | Python, R, Stata and MATLAB side by side |
 

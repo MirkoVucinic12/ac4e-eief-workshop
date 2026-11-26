@@ -1,6 +1,6 @@
 # Lane choice
 
-Fill during C1 and C2 (Thu 09:10–09:55). In C2 you change this file in your first pull request.
+Fill this in Thu 09:10–09:55. You change this file in your first pull request.
 
 ## Primary tool
 
@@ -19,7 +19,7 @@ Fill during C1 and C2 (Thu 09:10–09:55). In C2 you change this file in your fi
 - Command-line command available: Yes / No (record in `notes/cli_lane.md`)
 - Logged in / authenticated: Yes / No
 
-## What the agent did that the chatbot could not (C1)
+## What the agent did that the chatbot could not
 
 (one line)
 

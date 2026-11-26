@@ -5,13 +5,13 @@ workshop concepts have different names in each tool; look for these:
 
 | Concept | Look for |
 | --- | --- |
-| Rules file (C3) | `AGENTS.md`, rules, memories, instruction files |
-| To-do list (C4) | plan mode, task list, checklist |
-| Skills (C5, C6) | skills, commands, routines, playbooks |
-| Sub-agents (C7, C9) | sub-agents, custom agents, workers, roles |
-| Goal (C12) | goals, finish conditions, task targets |
-| Cloud agents from issues (C11) | background agents, scheduled tasks, issue triggers |
-| Review (C14) | list of changes, logs, pull requests, run records |
+| Rules file | `AGENTS.md`, rules, memories, instruction files |
+| To-do list | plan mode, task list, checklist |
+| Skills | skills, commands, routines, playbooks |
+| Sub-agents | sub-agents, custom agents, workers, roles |
+| Goal | goals, finish conditions, task targets |
+| Cloud agents from issues | background agents, scheduled tasks, issue triggers |
+| Review | list of changes, logs, pull requests, run records |
 
 ## Before an agent runs on its own
 

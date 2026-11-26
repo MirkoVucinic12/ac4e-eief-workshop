@@ -1,6 +1,6 @@
-% Slot 4: C11 review, C12--C14, Capstone, close (Fri 27 Nov 14:00--16:30 Rome)
+% Slot 4: Capstone, close (Fri 27 Nov 14:00--16:30 Rome)
 
-\section{Slot 4: C11 review, C12--C14}
+\section{Slot 4}
 
 \begin{frame}{Slot 4 \textperiodcentered\ Fri 14:00--16:30}
   \begin{center}
@@ -8,10 +8,10 @@
       \toprule
       \textbf{Clock} & \textbf{Block} \\
       \midrule
-      14:00--14:10 & \concept{C11} Review what the swarm returned \\
-      14:10--14:25 & \concept{C12} Goals \\
-      14:25--14:50 & \concept{C13} Acceptance criteria: rewrite one card, relaunch \\
-      14:50--15:50 & \concept{C14} Verification and evaluation \\
+      14:00--14:10 & Review what the swarm returned \\
+      14:10--14:25 & Goals \\
+      14:25--14:50 & Acceptance criteria: rewrite one card, relaunch \\
+      14:50--15:50 & Verification and evaluation \\
       15:50--16:15 & Capstone: your own project \\
       16:15--16:30 & Close and 7-day plan \\
       \bottomrule
@@ -19,8 +19,8 @@
   \end{center}
 \end{frame}
 
-% ---------------------------------------------------------------- C11 review
-\begin{frame}{C11 \textperiodcentered\ Review what came back}
+% ---------------------------------------------------------------- review
+\begin{frame}{Review what came back}
   \timebox{14:00--14:10}\par\vspace{0.3em}
   For each pull request from lunch:
   \begin{enumerate}
@@ -33,15 +33,15 @@
   {\large How did each agent know when to stop?}
 \end{frame}
 
-% ---------------------------------------------------------------- C12
-\begin{frame}{C12 \textperiodcentered\ Goals}
+% ----------------------------------------------------------------
+\begin{frame}{Goals}
   \timebox{14:10--14:25}
   \inplainwords{A goal is one sentence describing the finished state, in a form you
     can check. It tells the agent where to stop, not how to get there.}
   \likethis{the destination in a satnav, not the turn-by-turn directions.}
 \end{frame}
 
-\begin{frame}{C12 \textperiodcentered\ Card--Krueger: from vague to checkable}
+\begin{frame}{Card--Krueger: from vague to checkable}
   \begin{block}{Vague}
     ``Audit the replication.''
   \end{block}
@@ -55,7 +55,7 @@
   {\small More goals: \artifact{examples/card-krueger-goals/goals/}}
 \end{frame}
 
-\begin{frame}{C12 \textperiodcentered\ Your turn}
+\begin{frame}{Your turn}
   \youtry{14:10--14:25}
   \vspace{0.3em}
   \begin{enumerate}
@@ -65,15 +65,15 @@
   \end{enumerate}
 \end{frame}
 
-% ---------------------------------------------------------------- C13
-\begin{frame}{C13 \textperiodcentered\ Acceptance criteria}
+% ----------------------------------------------------------------
+\begin{frame}{Acceptance criteria}
   \timebox{14:25--14:50}
   \inplainwords{A yes/no check that says when a job counts as done. In a swarm, each
     agent knows when to stop, and you can check many results quickly.}
   \likethis{a building inspector's checklist.}
 \end{frame}
 
-\begin{frame}{C13 \textperiodcentered\ Card--Krueger: done when\ldots}
+\begin{frame}{Card--Krueger: done when\ldots}
   Card \artifact{ck-data-cleaning} is done when:
   \vspace{0.3em}
   \begin{itemize}
@@ -86,7 +86,7 @@
   Each line is yes or no. No line asks ``is it good?''
 \end{frame}
 
-\begin{frame}{C13 \textperiodcentered\ Your turn: rewrite and relaunch}
+\begin{frame}{Your turn: rewrite and relaunch}
   \youtry{14:25--14:50}
   \vspace{0.3em}
   \begin{enumerate}
@@ -98,8 +98,8 @@
   {\small Template: \artifact{templates/issue\_card.md}}
 \end{frame}
 
-% ---------------------------------------------------------------- C14
-\begin{frame}{C14 \textperiodcentered\ Verification and evaluation}
+% ----------------------------------------------------------------
+\begin{frame}{Verification and evaluation}
   \timebox{14:50--15:50}
   \begin{enumerate}
     \item \textbf{Check less:} small jobs, protected files, clear done-when checks.
@@ -110,7 +110,7 @@
   \likethis{planting a known error in a paper to see whether the referee catches it.}
 \end{frame}
 
-\begin{frame}{C14 \textperiodcentered\ Card--Krueger: a planted mistake}
+\begin{frame}{Card--Krueger: a planted mistake}
   \artifact{faults/drifted\_table.tex}: a hand-copied DiD (3.15) and row count (47).
   \vspace{0.5em}
   \begin{center}
@@ -132,7 +132,7 @@
   A passing check means the numbers match. It says nothing about causality.
 \end{frame}
 
-\begin{frame}{C14 \textperiodcentered\ Card--Krueger: test the helpers}
+\begin{frame}{Card--Krueger: test the helpers}
   \begin{tabular}{@{}p{0.29\linewidth}p{0.43\linewidth}p{0.20\linewidth}@{}}
     \toprule
     \textbf{What you test} & \textbf{Known mistake} & \textbf{Result} \\
@@ -147,7 +147,7 @@
   {\small Planted mistakes: \artifact{examples/card-krueger-toy/faults/}}
 \end{frame}
 
-\begin{frame}{C14 \textperiodcentered\ Your turn}
+\begin{frame}{Your turn}
   \youtry{14:50--15:50}
   \vspace{0.3em}
   \begin{enumerate}
@@ -168,9 +168,9 @@
   \timebox{15:50--16:15}\par\vspace{0.3em}
   On one non-confidential project of yours:
   \begin{enumerate}
-    \item One rule in its \artifact{AGENTS.md} (\concept{C3}).
-    \item One Skill for a task you repeat (\concept{C6}).
-    \item One goal (\concept{C12}) with three yes/no criteria (\concept{C13}).
+    \item One rule in its \artifact{AGENTS.md}.
+    \item One Skill for a task you repeat.
+    \item One goal with three yes/no criteria.
     \item Evidence: the check command and its output.
   \end{enumerate}
   {\small Only confidential data at hand? Use the Card--Krueger folder. Rubric: \artifact{docs/capstone\_rubric.md}}

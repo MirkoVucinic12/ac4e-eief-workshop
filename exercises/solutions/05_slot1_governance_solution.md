@@ -1,4 +1,4 @@
-# Reference — Exercise 05 (C3, C4)
+# Reference — Exercise 05
 
 ## A. Rules file
 

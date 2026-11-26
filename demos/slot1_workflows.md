@@ -1,9 +1,9 @@
-# Demo — C1 Agent vs chatbot, C2 Version control
+# Demo — Agent vs chatbot, Version control
 
 **When:** Thu 26 Nov 2026, 09:10–09:55 (Rome). Live demo at most 10 minutes per concept.
 **Example:** the synthetic Card–Krueger panel, [`examples/card-krueger-toy/`](../examples/card-krueger-toy/).
 
-## C1 Agent vs chatbot (09:10–09:30)
+## Agent vs chatbot (09:10–09:30)
 
 **Say:** a chatbot only talks. An agent can also act: it opens your files, runs your code, reads the result and tries again. Phoning a friend versus an RA at your desk.
 
@@ -30,7 +30,7 @@ Expected: NJ change 2.0, PA change −1.0, toy DiD 3.0 FTE workers, and the cave
 
 **Codex / Cursor:** same prompt. In Cursor, use Ask mode for read-only.
 
-## C2 Version control: first pull request (09:30–09:55)
+## Version control: first pull request (09:30–09:55)
 
 **Say:** a record of every saved version, each with a note, so you can see what changed and go back. GitHub keeps it online and lets coauthors review before accepting. Track Changes plus dated "save as" copies.
 

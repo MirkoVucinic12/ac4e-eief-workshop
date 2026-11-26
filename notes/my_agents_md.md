@@ -1,6 +1,6 @@
-# My project's rules file (C3 draft)
+# My project's rules file (draft)
 
-Fill during C3 (Thu 09:55–10:35). Start with one rule; you will reuse it in the Capstone.
+Fill this in Thu 09:55–10:35. Start with one rule; you will reuse it in the Capstone.
 
 Project (non-confidential name):
 

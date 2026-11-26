@@ -1,28 +1,28 @@
 # Slot 3 — Fri 27 Nov 2026, 10:15–12:00 (Rome)
 
-Concepts **C9–C11**: using sub-agents, running several agents at once, and an issue-board swarm that works over lunch.
+Using sub-agents, running several agents at once, and an issue-board swarm that works over lunch.
 
 | Clock | Block | You do | You write |
 | ---: | --- | --- | --- |
-| 10:15–10:50 | **C9** Using sub-agents | Run two reviewers, compare their reports | `notes/orchestration_log.md` |
-| 10:50–11:15 | **C10** Orchestrating sub-agents and swarms | Split one job into three that share no files | `notes/orchestration_log.md` |
+| 10:15–10:50 | Using sub-agents | Run two reviewers, compare their reports | `notes/orchestration_log.md` |
+| 10:50–11:15 | Orchestrating sub-agents and swarms | Split one job into three that share no files | `notes/orchestration_log.md` |
 | 11:15–11:25 | Pause | Fill the risk card if you will use a cloud agent | `agent-harness/autonomous_agent_risk_card.md` |
-| 11:25–12:00 | **C11** Issue-board swarm | Open two cards, start two agents | two issues, two agents running |
+| 11:25–12:00 | Issue-board swarm | Open two cards, start two agents | two issues, two agents running |
 | *12:00–14:00* | *Lunch* | *The agents work; you don't* | |
 
-## C9 Using sub-agents (10:15–10:50)
+## Using sub-agents (10:15–10:50)
 
 Call the helper by name, give it one narrow instruction, keep it read-only and read its report before you act. You decide what to do with the report, as with two referees who don't talk to each other.
 
 Run [`data-reviewer`](../.claude/agents/data-reviewer.md) and [`literature-reviewer`](../.claude/agents/literature-reviewer.md) on the Card–Krueger folder. Exercise: [`07_slot3_subagents_vc.md`](../exercises/07_slot3_subagents_vc.md), part A.
 
-## C10 Orchestrating sub-agents and swarms (10:50–11:15)
+## Orchestrating sub-agents and swarms (10:50–11:15)
 
 **Orchestrating** means splitting a job into parts, handing each part to a different agent, and putting the results back together. A **swarm** is many agents working at the same time. A human still makes the final call, like a PI running several RAs, each with their own files.
 
 Rule: two agents must never edit the same file. See the writer and checker pair in [`examples/card-krueger-swarm/README.md`](../examples/card-krueger-swarm/README.md). Exercise: part B.
 
-## C11 Issue-board swarm: launch (11:25–12:00)
+## Issue-board swarm: launch (11:25–12:00)
 
 Each job is written as an **issue**, a to-do card on GitHub. Agents pick up cards marked `ready`, work in their own separate copy, and send back a pull request linked to the card. Cards move `ready` → `in-progress` → `needs-review` → `done`, like a job board where whoever is free takes the next card.
 

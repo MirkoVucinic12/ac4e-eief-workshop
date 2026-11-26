@@ -1,6 +1,6 @@
 # Privacy check
 
-Fill in during C3 (Thu 09:55–10:35) for one real project of yours. Three questions; if any answer is "no" or "unclear", that project stays out of the agent.
+Fill this in Thu 09:55–10:35 for one real project of yours. Three questions; if any answer is "no" or "unclear", that project stays out of the agent.
 
 ## 1. How sensitive is the data?
 

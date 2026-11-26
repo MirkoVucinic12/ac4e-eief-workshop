@@ -1,6 +1,6 @@
-% Slot 2: C5--C8 (Thu 26 Nov 11:00--12:00 + Fri 27 Nov 09:30--10:15 Rome)
+% Slot 2 (Thu 26 Nov 11:00--12:00 + Fri 27 Nov 09:30--10:15 Rome)
 
-\section{Slot 2: C5--C8}
+\section{Slot 2}
 
 \begin{frame}{Slot 2 \textperiodcentered\ Thu 11:00--12:00 + Fri 09:30--10:15}
   \begin{center}
@@ -8,27 +8,27 @@
       \toprule
       \textbf{Clock} & \textbf{Block} \\
       \midrule
-      Thu 11:00--11:25 & \concept{C5} Skills: why \\
-      11:25--11:55 & \concept{C6} Create a Skill \\
+      Thu 11:00--11:25 & Skills: why \\
+      11:25--11:55 & Create a Skill \\
       11:55--12:00 & Thursday wrap, overnight task \\
       \addlinespace[0.3em]
       Fri 09:30--09:35 & Recap \\
-      09:35--09:55 & \concept{C7} Sub-agent vs Skill \\
-      09:55--10:15 & \concept{C8} Rule of thumb: Skill or sub-agent? \\
+      09:35--09:55 & Sub-agent vs Skill \\
+      09:55--10:15 & Rule of thumb: Skill or sub-agent? \\
       \bottomrule
     \end{tabular}
   \end{center}
 \end{frame}
 
-% ---------------------------------------------------------------- C5
-\begin{frame}{C5 \textperiodcentered\ Skills: why}
+% ----------------------------------------------------------------
+\begin{frame}{Skills: why}
   \timebox{Thu 11:00--11:25}
   \inplainwords{A Skill is a saved set of instructions for a task you do often.
     The agent follows it the same way every time, and you can share it with coauthors.}
   \likethis{a recipe card, in place of explaining the dish from memory each time.}
 \end{frame}
 
-\begin{frame}{C5 \textperiodcentered\ Card--Krueger: \texttt{replication-checker}}
+\begin{frame}{Card--Krueger: \texttt{replication-checker}}
   Does our folder reproduce its numbers from a fresh start?
   \vspace{0.4em}
   \begin{itemize}
@@ -40,7 +40,7 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{C5 \textperiodcentered\ Your turn}
+\begin{frame}{Your turn}
   \youtry{Thu 11:00--11:25}
   \vspace{0.3em}
   \begin{enumerate}
@@ -52,15 +52,15 @@
   {\small Guide: \artifact{demos/slot2\_sdd\_skill\_pr.md} \textperiodcentered\ \artifact{exercises/06\_slot2\_sdd\_skill\_pr.md}}
 \end{frame}
 
-% ---------------------------------------------------------------- C6
-\begin{frame}{C6 \textperiodcentered\ Create a Skill}
+% ----------------------------------------------------------------
+\begin{frame}{Create a Skill}
   \timebox{Thu 11:25--11:55}
   \inplainwords{Make a folder and write a short file in it with a name, a line saying
     when to use it, and numbered steps. Test it once and fix whatever was unclear.}
   \likethis{writing down your referee-report checklist so a student can follow it.}
 \end{frame}
 
-\begin{frame}[fragile]{C6 \textperiodcentered\ Card--Krueger: \texttt{sample-restrictions-note}}
+\begin{frame}[fragile]{Card--Krueger: \texttt{sample-restrictions-note}}
   {\small \artifact{.claude/skills/sample-restrictions-note/SKILL.md} (shape of the file)}
   \begin{lstlisting}[style=markdown,basicstyle=\ttfamily\footnotesize]
 ---
@@ -75,7 +75,7 @@ description: Use after any change to the Card-Krueger sample.
   {\small The header lines between the dashes: its name and when to use it.}
 \end{frame}
 
-\begin{frame}{C6 \textperiodcentered\ Your turn}
+\begin{frame}{Your turn}
   \youtry{Thu 11:25--11:55}
   \vspace{0.3em}
   \begin{enumerate}
@@ -94,14 +94,14 @@ description: Use after any change to the Card-Krueger sample.
   \end{block}
   \vspace{0.4em}
   \begin{block}{Friday 09:30: so far}
-    \concept{C1} agent \textperiodcentered\ \concept{C2} saved versions \textperiodcentered\
-    \concept{C3} rules file \textperiodcentered\ \concept{C4} to-do list \textperiodcentered\
-    \concept{C5--C6} Skills
+    Agent \textperiodcentered\ saved versions \textperiodcentered\
+    rules file \textperiodcentered\ to-do list \textperiodcentered\
+    Skills
   \end{block}
 \end{frame}
 
-% ---------------------------------------------------------------- C7
-\begin{frame}{C7 \textperiodcentered\ Sub-agent: what it is}
+% ----------------------------------------------------------------
+\begin{frame}{Sub-agent: what it is}
   \timebox{Fri 09:35--09:55}
   \inplainwords{A sub-agent is a separate helper agent with its own blank notebook and
     one narrow job. It reports back a summary. A Skill is instructions; a sub-agent
@@ -109,7 +109,7 @@ description: Use after any change to the Card-Krueger sample.
   \likethis{a recipe (Skill) vs a sous-chef you send to taste the sauce (sub-agent).}
 \end{frame}
 
-\begin{frame}{C7 \textperiodcentered\ Card--Krueger: Skill vs sub-agent}
+\begin{frame}{Card--Krueger: Skill vs sub-agent}
   \begin{tabular}{@{}p{0.22\linewidth}p{0.34\linewidth}p{0.36\linewidth}@{}}
     \toprule
      & \textbf{Skill} & \textbf{Sub-agent} \\
@@ -125,7 +125,7 @@ description: Use after any change to the Card-Krueger sample.
   \artifact{data-reviewer} looks only at panel balance and NJ/PA coding. It never edits.
 \end{frame}
 
-\begin{frame}{C7 \textperiodcentered\ Your turn}
+\begin{frame}{Your turn}
   \youtry{Fri 09:35--09:55}
   \vspace{0.3em}
   Open \artifact{.claude/agents/data-reviewer.md} and mark three things:
@@ -136,8 +136,8 @@ description: Use after any change to the Card-Krueger sample.
   \end{enumerate}
 \end{frame}
 
-% ---------------------------------------------------------------- C8
-\begin{frame}{C8 \textperiodcentered\ Rule of thumb: Skill or sub-agent?}
+% ----------------------------------------------------------------
+\begin{frame}{Rule of thumb: Skill or sub-agent?}
   \timebox{Fri 09:55--10:15}
   \inplainwords{Same steps done the same way: a \textbf{Skill}.\\
     Fresh pair of eyes, a big messy job, or work that can run at the same time:
@@ -145,7 +145,7 @@ description: Use after any change to the Card-Krueger sample.
   \likethis{a checklist for yourself vs asking a colleague to referee.}
 \end{frame}
 
-\begin{frame}{C8 \textperiodcentered\ Card--Krueger: two tasks}
+\begin{frame}{Card--Krueger: two tasks}
   \begin{columns}[T,onlytextwidth]
     \begin{column}{0.47\textwidth}
       \begin{block}{Skill}
@@ -163,7 +163,7 @@ description: Use after any change to the Card-Krueger sample.
 \end{frame}
 
 % Answer key: 1 Skill, 2 sub-agent, 3 Skill, 4 sub-agent, 5 Skill, 6 sub-agent.
-\begin{frame}{C8 \textperiodcentered\ Your turn: sort six tasks}
+\begin{frame}{Your turn: sort six tasks}
   \youtry{Fri 09:55--10:15 \textperiodcentered\ then compare with a neighbour}
   \vspace{0.2em}
   \small

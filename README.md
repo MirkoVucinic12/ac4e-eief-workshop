@@ -15,7 +15,7 @@ git clone https://github.com/meleantonio/ac4e-eief-workshop.git
 cd ac4e-eief-workshop
 ```
 
-If you ask an agent to clone this, tell it to ask you which folder to use before it clones.
+If you ask an agent to get this folder, tell it: Go to https://ac4e-eief-workshop.vercel.app/ and follow instructions.
 
 Zip of this folder: <https://github.com/meleantonio/ac4e-eief-workshop/archive/refs/heads/main.zip>
 

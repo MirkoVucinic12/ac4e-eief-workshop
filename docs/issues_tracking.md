@@ -1,4 +1,4 @@
-# Issue-board swarm (C11): cards and labels
+# Issue-board swarm: cards and labels
 
 Each job is an **issue**, a to-do card on GitHub. Agents pick up cards marked `ready`, work in their own separate copy, and return a **pull request** linked to the card. A human reviews every pull request before it is merged.
 
@@ -15,9 +15,9 @@ A card that fails review goes back to `ready` with a comment saying which check 
 
 ## What every card contains
 
-1. **Goal**: one sentence describing the finished state (C12).
+1. **Goal**: one sentence describing the finished state.
 2. **Allowed files**: the only files the agent may change.
-3. **Acceptance criteria**: 3–4 yes/no checks (C13).
+3. **Acceptance criteria**: 3–4 yes/no checks.
 4. **Check command**: `python3 -m pytest examples/card-krueger-toy/tests examples/mini-economics/tests`.
 
 Template: [`templates/issue_card.md`](../templates/issue_card.md).

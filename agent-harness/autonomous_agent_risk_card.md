@@ -1,4 +1,4 @@
-# Cloud-agent risk card (C11)
+# Cloud-agent risk card
 
 Fill this in before a cloud or background agent works on the project, for example
 when it picks up an issue card over lunch. Five minutes. This is your own check, not
@@ -44,5 +44,5 @@ Kept as a record. Fill in the blanks above for **your** tool; do not copy these.
 - Memory: branch, saved versions, chat record, vendor records. Yellow.
 - Where it runs: separate cloud copy of the public project. Yellow.
 - Review: a human checks citations, changes and check-command output before merging. Green.
-- Record: version history, pull request, and the check command. Green.
+- Record: version history, pull request, check command. Green.
 - Decision: safe to work on its own branch and open a pull request.

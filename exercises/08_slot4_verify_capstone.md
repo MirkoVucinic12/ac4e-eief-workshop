@@ -1,22 +1,22 @@
-# Exercise 08 — C11 review, C12 Goals, C13 Acceptance criteria, C14 Verification, Capstone
+# Exercise 08 — review, Goals, Acceptance criteria, Verification, Capstone
 
 **When:** Fri 27 Nov 2026, 14:00–16:30 (Rome). **Example:** synthetic Card–Krueger panel, then your own work.
 
-## A. Review the swarm (C11, 14:00–14:10)
+## A. Review the swarm (14:00–14:10)
 
 For each returned pull request: ask `pr-reviewer` for a read-only review against `AGENTS.md` and the card, read the list of changes yourself, then merge (card → `done`) or send back (card → `ready`).
 
-## B. Write a goal (C12, 14:10–14:25)
+## B. Write a goal (14:10–14:25)
 
 Rewrite one card's title as **one sentence** describing the finished state, in a form you can check. Example: "`notes/replication_audit_ck.md` exists and records GREEN, YELLOW or RED with the test output."
 
-## C. Add acceptance criteria and relaunch (C13, 14:25–14:50)
+## C. Add acceptance criteria and relaunch (14:25–14:50)
 
 1. Add **3 yes/no checks** to the same card. Example: "`toy_fast_food.csv` is unchanged."
 2. Relaunch the agent with the goal as `/goal …` (Claude Code, Codex) or as the last line of the prompt (Cursor).
 3. Judge the new pull request **only** against your 3 checks.
 
-## D. Verification (C14, 14:50–15:50)
+## D. Verification (14:50–15:50)
 
 1. Run the check command and see it pass:
 

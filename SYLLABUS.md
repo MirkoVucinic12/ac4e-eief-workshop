@@ -31,20 +31,20 @@ A personal laptop with install rights if possible, a GitHub account, and one age
 
 By the end you can:
 
-1. **C1** Explain the difference between a chatbot (only talks) and an agent (also opens files, runs code and tries again).
-2. **C2** Make a separate copy, save a version with a note, open a pull request, review the list of changes and merge.
-3. **C3** Write rules in an `AGENTS.md` file and decide, from sensitivity, permission and location, whether data may go near an agent.
-4. **C4** Ask for a to-do list before any action, edit it, and let the agent run one step.
-5. **C5** Run a Skill and explain why saved instructions beat retyped prompts.
-6. **C6** Write, test and fix a Skill of your own.
-7. **C7** Explain how a sub-agent (another worker) differs from a Skill (instructions).
-8. **C8** Decide whether a task calls for a Skill or a sub-agent.
-9. **C9** Run two read-only sub-agents and decide which findings to accept.
-10. **C10** Split a job into parts that share no files and assign them to different agents.
-11. **C11** Run a small swarm from GitHub issues and review the pull requests it returns.
-12. **C12** Write a goal: one checkable sentence describing the finished state.
-13. **C13** Write yes/no acceptance criteria and judge an agent's work only against them.
-14. **C14** Reduce, automate and test your checking, including against planted mistakes.
+1. Explain the difference between a chatbot (only talks) and an agent (also opens files, runs code and tries again).
+2. Make a separate copy, save a version with a note, open a pull request, review the list of changes and merge.
+3. Write rules in an `AGENTS.md` file and decide, from sensitivity, permission and location, whether data may go near an agent.
+4. Ask for a to-do list before any action, edit it, and let the agent run one step.
+5. Run a Skill and explain why saved instructions beat retyped prompts.
+6. Write, test and fix a Skill of your own.
+7. Explain how a sub-agent (another worker) differs from a Skill (instructions).
+8. Decide whether a task calls for a Skill or a sub-agent.
+9. Run two read-only sub-agents and decide which findings to accept.
+10. Split a job into parts that share no files and assign them to different agents.
+11. Run a small swarm from GitHub issues and review the pull requests it returns.
+12. Write a goal: one checkable sentence describing the finished state.
+13. Write yes/no acceptance criteria and judge an agent's work only against them.
+14. Reduce, automate and test your checking, including against planted mistakes.
 
 Agents never certify identification, causality or interpretation.
 
@@ -54,11 +54,11 @@ Agents never certify identification, causality or interpretation.
 
 | Day | Clock | Slot | Concepts |
 | --- | --- | --- | --- |
-| Thu 26 Nov | **09:00–11:00** | 1 | C1–C4 |
-| Thu 26 Nov | **11:00–12:00** | 2 (part 1) | C5–C6 |
-| Fri 27 Nov | **09:30–10:15** | 2 (part 2) | C7–C8 |
-| Fri 27 Nov | **10:15–12:00** | 3 | C9–C11 (launch) |
-| Fri 27 Nov | **14:00–16:30** | 4 | C11 (review), C12–C14, Capstone, close |
+| Thu 26 Nov | **09:00–11:00** | 1 | Agent, version control, rules, to-do lists |
+| Thu 26 Nov | **11:00–12:00** | 2 (part 1) | Skills |
+| Fri 27 Nov | **09:30–10:15** | 2 (part 2) | Sub-agent vs Skill |
+| Fri 27 Nov | **10:15–12:00** | 3 | Sub-agents and swarm (launch) |
+| Fri 27 Nov | **14:00–16:30** | 4 | Swarm review, goals, criteria, verification, Capstone, close |
 
 Minute-by-minute: [`SCHEDULE.md`](SCHEDULE.md).
 

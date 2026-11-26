@@ -1,10 +1,10 @@
-# Exercise 07 — C9 Using sub-agents, C10 Orchestrating, C11 Swarm launch
+# Exercise 07 — Using sub-agents, Orchestrating, Swarm launch
 
 **When:** Fri 27 Nov 2026, 10:15–12:00 (Rome). **Example:** synthetic Card–Krueger panel.
 
 Write your answers in [`notes/orchestration_log.md`](../notes/orchestration_log.md).
 
-## A. Two referees (C9, 10:15–10:50)
+## A. Two referees (10:15–10:50)
 
 1. Run both helpers, read-only:
 
@@ -21,11 +21,11 @@ Write your answers in [`notes/orchestration_log.md`](../notes/orchestration_log.
 
 2. Log one finding you **accept** and one you **reject**, with a reason each.
 
-## B. Split the job (C10, 10:50–11:15)
+## B. Split the job (10:50–11:15)
 
 Split "replicate and extend Card–Krueger" into **three jobs that share no files**. For each, write: the job in one line, the files it may change, and who reviews it.
 
-## C. Launch two cards (C11, 11:25–12:00)
+## C. Launch two cards (11:25–12:00)
 
 1. Fill [`agent-harness/autonomous_agent_risk_card.md`](../agent-harness/autonomous_agent_risk_card.md) if you will use a cloud agent.
 2. On GitHub, open two issues from [`ck-data-cleaning.md`](../examples/card-krueger-swarm/issues/ck-data-cleaning.md) and [`ck-parallel-trends-figure.md`](../examples/card-krueger-swarm/issues/ck-parallel-trends-figure.md). Label them `ready`.

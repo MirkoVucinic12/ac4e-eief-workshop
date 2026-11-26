@@ -4,7 +4,7 @@ This folder holds the workshop set-up for **Claude Code**, **Codex** and **Curso
 the same Skills and sub-agents, saved in each tool's own format. The set-up is the
 rules file (`AGENTS.md`) plus Skills, sub-agents and checks.
 
-## Skill or sub-agent? (C8 rule of thumb)
+## Skill or sub-agent?
 
 - **Skill** = saved instructions. Use one when the same steps should be done the
   same way every time. Example: "Recompute the DiD the same way each time."
@@ -19,10 +19,10 @@ result and you decide.
 
 | Skill | Use when | Concept |
 | --- | --- | --- |
-| `replication-checker` | Checking whether the example reproduces its numbers from a fresh start | C5, C14 |
-| `sample-restrictions-note` | Listing every rule that drops stores, with the count after each | C6 (worked example) |
-| `hooks` | Setting up the optional automatic check after each edit | C14 (optional) |
-| `loop-on-verification` | Letting the agent check its own work before you review | C14 (optional) |
+| `replication-checker` | Checking whether the example reproduces its numbers from a fresh start | Skills, verification |
+| `sample-restrictions-note` | Listing every rule that drops stores, with the count after each | Create a Skill (worked example) |
+| `hooks` | Setting up the optional automatic check after each edit | Verification (optional) |
+| `loop-on-verification` | Letting the agent check its own work before you review | Verification (optional) |
 
 Off the path: `literature-mapper` (optional mention only) and `sdd`.
 
@@ -32,10 +32,10 @@ All are read-only: they report, they never edit.
 
 | Sub-agent | One narrow job | Concept |
 | --- | --- | --- |
-| `data-reviewer` | Panel balance, missing values, NJ/PA coding | C7, C9, C14 |
-| `literature-reviewer` | References and literature claims | C9 |
-| `pr-reviewer` | Reviews a returned pull request against its card | C11 |
-| `loop-verifier` | One check-and-revise round (optional) | C14 |
+| `data-reviewer` | Panel balance, missing values, NJ/PA coding | Sub-agents, verification |
+| `literature-reviewer` | References and literature claims | Using sub-agents |
+| `pr-reviewer` | Reviews a returned pull request against its card | Issue-board swarm |
+| `loop-verifier` | One check-and-revise round (optional) | Verification |
 
 Off the path: `sdd-orchestrator`.
 
@@ -57,7 +57,7 @@ and an optional data connection example (`mcp/`, prework only).
 ## Other files
 
 - [`autonomous_agent_risk_card.md`](autonomous_agent_risk_card.md): fill in before
-  any cloud agent works on the project (C11).
+  any cloud agent works on the project.
 - [`mcp/fred/`](mcp/fred/): optional FRED data connection, not used in the room.
 
 Menu names change between versions. Check them in your installed tool.

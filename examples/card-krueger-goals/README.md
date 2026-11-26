@@ -1,14 +1,14 @@
 # Card–Krueger goal briefs
 
-Short briefs for C4 (to-do lists) and C12 (goals). Each brief opens with a
+Short briefs for to-do lists and goals. Each brief opens with a
 **one-sentence goal**: a finish line you can check. Give the agent that sentence,
 not the whole brief.
 
 | Brief | Goal |
 | --- | --- |
-| [`goals/ck-replication-audit.md`](goals/ck-replication-audit.md) | An audit note records GREEN, YELLOW or RED with the check-command output (C12 example) |
-| [`goals/ck-robustness-checks.md`](goals/ck-robustness-checks.md) | The script prints the main DiD and two robustness versions (C4: ask for the to-do list only) |
-| [`goals/ck-parallel-trends-figure.md`](goals/ck-parallel-trends-figure.md) | A figure shows NJ and PA mean employment in both waves (C11 card) |
+| [`goals/ck-replication-audit.md`](goals/ck-replication-audit.md) | An audit note records GREEN, YELLOW or RED with the check-command output |
+| [`goals/ck-robustness-checks.md`](goals/ck-robustness-checks.md) | The script prints the main DiD and two robustness versions (ask for the to-do list only) |
+| [`goals/ck-parallel-trends-figure.md`](goals/ck-parallel-trends-figure.md) | A figure shows NJ and PA mean employment in both waves |
 
 ## How to set a goal in each tool
 

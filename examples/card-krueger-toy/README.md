@@ -17,7 +17,7 @@ file contains, and every rule that drops stores, is in [`data_notes.md`](data_no
 | `src/did_analysis.py` | Checks the clean panel, prints group means and the 2x2 comparison, and writes a short note. |
 | `src/panel_workflow.py` | Cleans the messy extract step by step, prints the store count after each step, runs four versions of the estimate, and writes a checked LaTeX table. |
 | `tests/` | The checks behind the check command. Never edit them to make a check pass. |
-| `faults/` | Planted errors for C14. Use them only on a separate copy (branch). |
+| `faults/` | Planted errors. Use them only on a separate copy (branch). |
 
 ## Workshop path
 
@@ -25,20 +25,20 @@ One file per concept. The concepts follow the workshop order.
 
 | Concept | Open this |
 | --- | --- |
-| C1 Agent vs chatbot | `src/did_analysis.py`: let the agent run it and quote the note |
-| C2 Version control | This README: the agent's edit appears as a list of changes to accept or reject |
-| C3 `AGENTS.md` boundaries | [`../../AGENTS.md`](../../AGENTS.md); ask the agent to edit `data/toy_fast_food.csv` and watch it refuse |
-| C4 To-do lists | [`../card-krueger-goals/goals/ck-robustness-checks.md`](../card-krueger-goals/goals/ck-robustness-checks.md) (plan only) |
-| C5 Skills: why | [`../../.claude/skills/replication-checker/SKILL.md`](../../.claude/skills/replication-checker/SKILL.md) |
-| C6 Create a Skill | [`../../templates/skill_template.md`](../../templates/skill_template.md) and the worked example [`sample-restrictions-note`](../../.claude/skills/sample-restrictions-note/SKILL.md) |
-| C7 Sub-agent vs Skill | [`../../.claude/agents/data-reviewer.md`](../../.claude/agents/data-reviewer.md) |
-| C8 Skill or sub-agent? | Rule of thumb in [`../../agent-harness/README.md`](../../agent-harness/README.md) |
-| C9 Using sub-agents | `data-reviewer` and `literature-reviewer` on this folder; compare the two reports |
-| C10 Orchestrating | [`../card-krueger-swarm/README.md`](../card-krueger-swarm/README.md) (writer and checker) |
-| C11 Issue-board swarm | [`ck-data-cleaning`](../card-krueger-swarm/issues/ck-data-cleaning.md) and [`ck-parallel-trends-figure`](../card-krueger-swarm/issues/ck-parallel-trends-figure.md) |
-| C12 Goal | [`../card-krueger-goals/goals/ck-replication-audit.md`](../card-krueger-goals/goals/ck-replication-audit.md) |
-| C13 Acceptance criteria | "Done when" lists in the issue cards; [`../../templates/issue_card.md`](../../templates/issue_card.md) |
-| C14 Verification | `faults/drifted_table.tex` and the check command below |
+| Agent vs chatbot | `src/did_analysis.py`: let the agent run it and quote the note |
+| Version control | This README: the agent's edit appears as a list of changes to accept or reject |
+| `AGENTS.md` boundaries | [`../../AGENTS.md`](../../AGENTS.md); ask the agent to edit `data/toy_fast_food.csv` and watch it refuse |
+| To-do lists | [`../card-krueger-goals/goals/ck-robustness-checks.md`](../card-krueger-goals/goals/ck-robustness-checks.md) (plan only) |
+| Skills: why | [`../../.claude/skills/replication-checker/SKILL.md`](../../.claude/skills/replication-checker/SKILL.md) |
+| Create a Skill | [`../../templates/skill_template.md`](../../templates/skill_template.md) and the worked example [`sample-restrictions-note`](../../.claude/skills/sample-restrictions-note/SKILL.md) |
+| Sub-agent vs Skill | [`../../.claude/agents/data-reviewer.md`](../../.claude/agents/data-reviewer.md) |
+| Skill or sub-agent? | Rule of thumb in [`../../agent-harness/README.md`](../../agent-harness/README.md) |
+| Using sub-agents | `data-reviewer` and `literature-reviewer` on this folder; compare the two reports |
+| Orchestrating | [`../card-krueger-swarm/README.md`](../card-krueger-swarm/README.md) (writer and checker) |
+| Issue-board swarm | [`ck-data-cleaning`](../card-krueger-swarm/issues/ck-data-cleaning.md) and [`ck-parallel-trends-figure`](../card-krueger-swarm/issues/ck-parallel-trends-figure.md) |
+| Goal | [`../card-krueger-goals/goals/ck-replication-audit.md`](../card-krueger-goals/goals/ck-replication-audit.md) |
+| Acceptance criteria | "Done when" lists in the issue cards; [`../../templates/issue_card.md`](../../templates/issue_card.md) |
+| Verification | `faults/drifted_table.tex` and the check command below |
 
 ## Run
 

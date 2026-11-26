@@ -1,6 +1,6 @@
-# To-do list log (C4)
+# To-do list log
 
-Fill during C4 (Thu 10:45–11:00). Example: [`examples/card-krueger-goals/goals/ck-robustness-checks.md`](../examples/card-krueger-goals/goals/ck-robustness-checks.md).
+Fill this in Thu 10:45–11:00. Example: [`examples/card-krueger-goals/goals/ck-robustness-checks.md`](../examples/card-krueger-goals/goals/ck-robustness-checks.md).
 
 ## The agent's to-do list (before your edit)
 

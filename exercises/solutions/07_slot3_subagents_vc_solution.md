@@ -1,4 +1,4 @@
-# Reference — Exercise 07 (C9–C11 launch)
+# Reference — Exercise 07
 
 ## A. Two referees
 

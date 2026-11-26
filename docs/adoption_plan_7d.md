@@ -4,13 +4,13 @@ Start during the close (Fri 16:15–16:30). About 45 minutes a day on **one non-
 
 | Day | Do (≤45 min) | Concepts | You have at the end |
 | --- | --- | --- | --- |
-| 1 | Open the project in your agent. Ask it to explain the folder, read-only. Save the current state as a version on GitHub. | C1, C2 | the project on GitHub |
-| 2 | Write an `AGENTS.md` with 3 rules: folders to avoid, files to protect, how to check work. Answer the privacy questions. | C3 | `AGENTS.md` |
-| 3 | Ask for a to-do list for one small job. Edit it. Let the agent do it on a separate copy; review the list of changes. | C2, C4 | one merged pull request |
-| 4 | Turn one task you repeat into a Skill. Run it, fix one step. | C5, C6 | one Skill |
-| 5 | Run one read-only sub-agent as a referee on your code or data notes. Accept or reject each finding. | C7–C9 | review notes |
-| 6 | Write one GitHub card with a goal and 3 acceptance criteria. Hand it to an agent. Judge the pull request only against the criteria. | C11–C13 | one card done |
-| 7 | Plant a known mistake on a temporary copy. Does your check command, Skill or sub-agent catch it? | C14 | a 3-row scorecard |
+| 1 | Open the project in your agent. Ask it to explain the folder, read-only. Save the current state as a version on GitHub. | Agent, version control | the project on GitHub |
+| 2 | Write an `AGENTS.md` with 3 rules: folders to avoid, files to protect, how to check work. Answer the privacy questions. | Rules file | `AGENTS.md` |
+| 3 | Ask for a to-do list for one small job. Edit it. Let the agent do it on a separate copy; review the list of changes. | Version control, to-do lists | one merged pull request |
+| 4 | Turn one task you repeat into a Skill. Run it, fix one step. | Skills | one Skill |
+| 5 | Run one read-only sub-agent as a referee on your code or data notes. Accept or reject each finding. | Sub-agents | review notes |
+| 6 | Write one GitHub card with a goal and 3 acceptance criteria. Hand it to an agent. Judge the pull request only against the criteria. | Swarm, goals, acceptance criteria | one card done |
+| 7 | Plant a known mistake on a temporary copy. Does your check command, Skill or sub-agent catch it? | Verification | a 3-row scorecard |
 
 ## My project
 

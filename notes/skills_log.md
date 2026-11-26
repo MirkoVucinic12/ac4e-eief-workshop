@@ -1,28 +1,28 @@
-# Skills and sub-agents log (C5–C8)
+# Skills and sub-agents log
 
 Fill during Slot 2 (Thu 11:00–12:00, Fri 09:35–10:15).
 
-## C5 replication-checker
+## replication-checker
 
 - When to use it (from its file):
 - Rating: GREEN / YELLOW / RED
 - Command it ran:
 - Output (last lines):
 
-## C6 My Skill
+## My Skill
 
 - Path: `.claude/skills/<name>/SKILL.md`
 - What it does (one line):
 - First run: what the agent misread:
 - The step I fixed:
 
-## C7 data-reviewer
+## data-reviewer
 
 - Job:
 - Limits:
 - Report format:
 
-## C8 Skill or sub-agent?
+## Skill or sub-agent?
 
 | # | My answer | Neighbour's answer |
 | --- | --- | --- |

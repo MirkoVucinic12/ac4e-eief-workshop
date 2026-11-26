@@ -1,4 +1,4 @@
-# Skill template (C6)
+# Skill template
 
 A Skill is a saved set of instructions for a task you do often. Copy the block
 below into `.claude/skills/<skill-name>/SKILL.md` on your own separate copy (branch).

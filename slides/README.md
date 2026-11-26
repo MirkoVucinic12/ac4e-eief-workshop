@@ -17,10 +17,10 @@ Card–Krueger example, and a "your turn" exercise. The clock is in
 
 | Slot | Clock (Rome) | Ideas |
 | --- | --- | --- |
-| 1 | Thu 26 Nov 2026 09:00–11:00 | C1 Agent vs chatbot · C2 Version control · C3 `AGENTS.md` · C4 To-do lists |
-| 2 | Thu 11:00–12:00 + Fri 27 Nov 2026 09:30–10:15 | C5 Skills · C6 Create a Skill · C7 Sub-agent vs Skill · C8 Rule of thumb |
-| 3 | Fri 10:15–12:00 | C9 Using sub-agents · C10 Orchestrating and swarms · C11 Issue-board swarm (launch) |
-| 4 | Fri 14:00–16:30 | C11 review · C12 Goals · C13 Acceptance criteria · C14 Verification · Capstone · close |
+| 1 | Thu 26 Nov 2026 09:00–11:00 | Agent vs chatbot · Version control · `AGENTS.md` · To-do lists |
+| 2 | Thu 11:00–12:00 + Fri 27 Nov 2026 09:30–10:15 | Skills · Create a Skill · Sub-agent vs Skill · Rule of thumb |
+| 3 | Fri 10:15–12:00 | Using sub-agents · Orchestrating and swarms · Issue-board swarm (launch) |
+| 4 | Fri 14:00–16:30 | Review · Goals · Acceptance criteria · Verification · Capstone · close |
 
 ## Presenting
 
@@ -36,4 +36,4 @@ You need TeX Live or MacTeX with Beamer, `booktabs`, `listings` and TikZ.
 
 Fallback: preview [`option_b_four_slots.md`](option_b_four_slots.md) in VS Code / Cursor,
 or export it with `marp option_b_four_slots.md`. Marp shows the two small diagrams
-(C10 writer/checker, C14 fail–fix loop) as one line of text; the words match.
+(writer/checker, fail–fix loop) as one line of text; the words match.

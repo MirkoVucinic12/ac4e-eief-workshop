@@ -1,7 +1,7 @@
 # Task card
 
 Fill this in before you hand one job to an agent. It reuses four concepts:
-goal (C12), to-do list (C4), acceptance criteria (C13) and allowed files (C3).
+goal, to-do list, acceptance criteria and allowed files.
 
 ## Goal
 

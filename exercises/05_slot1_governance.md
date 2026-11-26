@@ -1,8 +1,8 @@
-# Exercise 05 — C3 `AGENTS.md` + privacy, C4 To-do lists
+# Exercise 05 — `AGENTS.md` + privacy, To-do lists
 
 **When:** Thu 26 Nov 2026, 09:55–10:35 and 10:45–11:00 (Rome). **Example:** synthetic Card–Krueger panel.
 
-## A. Read the rules file and test it (C3, 15 min)
+## A. Read the rules file and test it (15 min)
 
 1. Open [`AGENTS.md`](../AGENTS.md). Find the line that protects raw data and the line about identification.
 2. Ask the agent:
@@ -15,7 +15,7 @@
 3. Did it refuse and quote the rule? If it edited the file, discard the change.
 4. In `notes/my_agents_md.md`, write **one rule** for your own project's rules file (for example, "Never open the `survey_raw/` folder").
 
-## B. Privacy check (C3, 15 min)
+## B. Privacy check (15 min)
 
 Fill [`docs/privacy_boundary.md`](../docs/privacy_boundary.md) for one real project of yours:
 
@@ -25,7 +25,7 @@ Fill [`docs/privacy_boundary.md`](../docs/privacy_boundary.md) for one real proj
 
 If any answer is "no" or "unclear", that project stays out of the agent today.
 
-## C. To-do list (C4, 15 min)
+## C. To-do list (15 min)
 
 1. Ask for the list only:
 

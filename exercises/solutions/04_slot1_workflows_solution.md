@@ -1,4 +1,4 @@
-# Reference — Exercise 04 (C1, C2)
+# Reference — Exercise 04
 
 ## A. Agent vs chatbot
 

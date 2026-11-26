@@ -1,9 +1,9 @@
-# Demo — C3 `AGENTS.md` + privacy, C4 To-do lists
+# Demo — `AGENTS.md` + privacy, To-do lists
 
 **When:** Thu 26 Nov 2026, 09:55–10:35 and 10:45–11:00 (Rome).
 **Example:** the synthetic Card–Krueger panel.
 
-## C3 `AGENTS.md`: boundaries first (09:55–10:35)
+## `AGENTS.md`: boundaries first (09:55–10:35)
 
 **Say:** a plain-text rules file the agent reads before any task. What it may touch, what it must never do, how to check its work. House rules for a new RA.
 
@@ -36,7 +36,7 @@ Rule: **anonymize, authorize, keep it on the machine.** In this room, only publi
 
 **Codex / Cursor:** both read `AGENTS.md` automatically.
 
-## C4 To-do lists (10:45–11:00)
+## To-do lists (10:45–11:00)
 
 **Say:** before acting, the agent writes its steps as a checklist. You edit it, then it works through it. A shopping list you check before anyone drives to the store.
 

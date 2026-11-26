@@ -12,13 +12,13 @@ Install steps are in [`SETUP.md`](../SETUP.md).
 
 | Concept | In Cursor |
 | --- | --- |
-| Rules file (C3) | `AGENTS.md`, read automatically; optional extra rules in `.cursor/rules/` |
-| To-do list (C4) | Plan mode; the agent shows a to-do list you can edit before it builds |
-| Skills (C5, C6) | Copy `agent-harness/cursor/skills/<name>/` to `.cursor/skills/<name>/`; call by name |
-| Sub-agents (C7, C9) | Copy `agent-harness/cursor/subagents/<name>.md` to `.cursor/agents/`; "Use `data-reviewer` on the panel" |
-| Goal (C12) | No `/goal` command: make the goal the last line of your instructions |
-| Cloud agents from issues (C11) | Cloud Agents; start one from the Cursor app or with `@cursor` in a GitHub issue |
-| Automatic check after each edit (C14, optional) | `.cursor/hooks.json`; example in `agent-harness/cursor/hooks/` |
+| Rules file | `AGENTS.md`, read automatically; optional extra rules in `.cursor/rules/` |
+| To-do list | Plan mode; the agent shows a to-do list you can edit before it builds |
+| Skills | Copy `agent-harness/cursor/skills/<name>/` to `.cursor/skills/<name>/`; call by name |
+| Sub-agents | Copy `agent-harness/cursor/subagents/<name>.md` to `.cursor/agents/`; "Use `data-reviewer` on the panel" |
+| Goal | No `/goal` command: make the goal the last line of your instructions |
+| Cloud agents from issues | Cloud Agents; start one from the Cursor app or with `@cursor` in a GitHub issue |
+| Automatic check after each edit (optional) | `.cursor/hooks.json`; example in `agent-harness/cursor/hooks/` |
 
 ## Habits
 

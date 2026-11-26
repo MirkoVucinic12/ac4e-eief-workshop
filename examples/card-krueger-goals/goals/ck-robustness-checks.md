@@ -3,7 +3,7 @@
 **Goal:** running `examples/card-krueger-toy/src/did_analysis.py` prints the main
 DiD and two labelled robustness versions, each with its sample count.
 
-In C4, ask for the agent's to-do list only. Edit the list, then let it do step 1.
+Ask for the agent's to-do list only. Edit the list, then let it do step 1.
 
 ## What to do
 

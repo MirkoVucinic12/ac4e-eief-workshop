@@ -1,9 +1,9 @@
-# Demo — C9 Using sub-agents, C10 Orchestrating, C11 Issue-board swarm (launch)
+# Demo — Using sub-agents, Orchestrating, Issue-board swarm (launch)
 
 **When:** Fri 27 Nov 2026, 10:15–12:00 (Rome).
 **Example:** the synthetic Card–Krueger panel.
 
-## C9 Using sub-agents (10:15–10:50)
+## Using sub-agents (10:15–10:50)
 
 **Say:** call the helper by name, give it one narrow job, keep it read-only, read its report before you act. Two referees who don't talk to each other.
 
@@ -29,7 +29,7 @@ Expected: referee 2 flags that the toy DiD is cited as if it were Card and Krueg
 
 **Codex / Cursor:** see [`tool-lanes/`](../tool-lanes/) for how each tool calls a helper. If none starts, paste the helper's file into a fresh chat and say so in the log.
 
-## C10 Orchestrating sub-agents and swarms (10:50–11:15)
+## Orchestrating sub-agents and swarms (10:50–11:15)
 
 **Say:** split the job, give each part to a different agent, put the results back together. A swarm is many agents at once; a human makes the final call. A PI with several RAs, each with their own files.
 
@@ -41,7 +41,7 @@ Participants split "replicate and extend Card–Krueger" into three jobs with no
 
 Anyone planning a cloud agent fills [`agent-harness/autonomous_agent_risk_card.md`](../agent-harness/autonomous_agent_risk_card.md) now.
 
-## C11 Issue-board swarm: launch (11:25–12:00)
+## Issue-board swarm: launch (11:25–12:00)
 
 **Say:** each job is an issue, a to-do card on GitHub. Agents pick up cards marked `ready`, work in their own separate copy, and return a pull request linked to the card.
 

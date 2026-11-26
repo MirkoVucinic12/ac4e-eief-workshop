@@ -21,4 +21,4 @@ What failed and what you will try next. Do not paste secrets.
 
 ## Link forward
 
-Slot 2 (C5) runs the `replication-checker` Skill from this tool, or from its app.
+Slot 2 runs the `replication-checker` Skill from this tool, or from its app.

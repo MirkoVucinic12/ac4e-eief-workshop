@@ -1,4 +1,4 @@
-# Reference — Exercise 06 (C5–C8)
+# Reference — Exercise 06
 
 ## A. replication-checker
 

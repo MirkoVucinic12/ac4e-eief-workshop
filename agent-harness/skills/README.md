@@ -13,6 +13,6 @@ The Skills live in one folder per tool, with identical files:
 - Codex: `.agents/skills/` (portable copy: `../codex/skills/`)
 - Cursor: copy `../cursor/skills/` into `.cursor/skills/` after reading it
 
-Start with `replication-checker` (C5) and `sample-restrictions-note` (C6). To write
+Start with `replication-checker` and `sample-restrictions-note`. To write
 your own, use [`../../templates/skill_template.md`](../../templates/skill_template.md).
 Read a Skill before you run it.

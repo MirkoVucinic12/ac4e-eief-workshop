@@ -1,4 +1,4 @@
-# Planted errors (C14)
+# Planted errors
 
 Each file here contains a **planted error**. The automatic checks load them and
 confirm that each check catches its error. Never copy them over the files in

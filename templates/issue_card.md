@@ -1,4 +1,4 @@
-# Issue card template (C11, C13)
+# Issue card template
 
 An issue is a to-do card on GitHub. Paste the block below into a new issue and give
 it the label `ready`. Worked examples: [`examples/card-krueger-swarm/issues/`](../examples/card-krueger-swarm/issues/).
