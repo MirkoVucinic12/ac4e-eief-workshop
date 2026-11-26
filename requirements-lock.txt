@@ -2,6 +2,7 @@
 # Generated 2026-08-22 from the dependency tree of requirements.txt
 # (numpy, pandas, pytest, matplotlib, httpx, mcp) on CPython 3.12.
 # matplotlib and its dependencies added 2026-11-25.
+# Markdown added 2026-11-26 for scripts/build_participant_site.py.
 # Install with:
 #   python3 -m pip install -r requirements-lock.txt
 # Do not treat this file as a research finding. Re-generate before delivery
@@ -25,6 +26,7 @@ iniconfig==2.3.0
 jsonschema==4.26.0
 jsonschema-specifications==2025.9.1
 kiwisolver==1.5.1
+Markdown==3.11.4
 matplotlib==3.11.2
 mcp==1.29.0
 numpy==2.4.4
